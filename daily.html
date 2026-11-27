@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Daily Life &amp; Manners | ENJOY JAPAN" data-bn="দৈনন্দিন জীবন ও শিষ্টাচার | ENJOY JAPAN" data-ja="日常生活とマナー | ENJOY JAPAN">Daily Life &amp; Manners | ENJOY JAPAN</title>
+  <meta name="description" content="Japanese greetings, garbage separation, quiet behavior, eating manners, and onsen rules for foreigners.">
+  <meta name="theme-color" content="#142B3B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Bengali:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+Bengali:wght@500;600;700&amp;family=Shippori+Mincho:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Loaded here (not at the end of body) so the saved language appears before the page is shown -->
+  <script src="js/script.js"></script>
+</head>
+<body class="page_daily">
+
+  <div id="loader" aria-hidden="true">
+    <span class="loader_mark"></span>
+    <span class="loader_text">ENJOY JAPAN</span>
+  </div>
+  <div id="scroll_progress" aria-hidden="true"><span></span></div>
+  <a href="#main" class="skip_link" data-en="Skip to main content" data-bn="মূল বিষয়বস্তুতে যান" data-ja="本文へ移動">Skip to main content</a>
+  <div id="top_sentinel" aria-hidden="true"></div>
+
+  <!-- ===== Header (same on every page) ===== -->
+  <header id="header_area">
+    <div class="inner header_inner">
+      <h1 id="logo"><a href="index.html"><span class="logo_mark" aria-hidden="true"></span>ENJOY <span>JAPAN</span></a></h1>
+      <nav id="gnavi" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+          <li><a href="daily.html" class="current" aria-current="page" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+          <li><a href="everyday.html" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+          <li><a href="traffic.html" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+          <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+        </ul>
+      </nav>
+      <div class="header_tools">
+        <div id="lang_switch" role="group" aria-label="Language">
+          <button type="button" class="lang_button active" data-lang="en" lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="bn" lang="bn" aria-pressed="false">বাংলা</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+        </div>
+        <button type="button" id="menu_button" aria-expanded="false" aria-controls="gnavi">
+          <span class="menu_icon" aria-hidden="true"><span></span></span>
+          <span class="menu_label" data-en="MENU" data-bn="মেনু" data-ja="メニュー">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== Page hero ===== -->
+    <section id="pagevisual" aria-labelledby="page_title">
+      <span class="kanji_mark left dark" aria-hidden="true" lang="ja">暮</span>
+      <div class="petals" data-count="10" aria-hidden="true"></div>
+      <div class="daily_arch"><img src="images/dialy_life_and_manners.jpg" alt="Infographic “Learn from Japanese Lifestyle”: ikigai, ishiki (mindfulness), wabi-sabi, shinrin-yoku (forest bathing), kanso (simplicity), and kaizen" width="495" height="619" fetchpriority="high" decoding="async"></div>
+      <div class="inner pagevisual_text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+            <li><span aria-current="page" data-en="Daily Life" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">Daily Life</span></li>
+          </ol>
+        </nav>
+        <p class="page_label" data-en="01 · DAILY LIFE &amp; MANNERS" data-bn="০১ · দৈনন্দিন জীবন ও শিষ্টাচার" data-ja="01 · 日常生活とマナー">01 · DAILY LIFE &amp; MANNERS</p>
+        <h2 id="page_title" data-en="Daily Life &amp; Manners" data-bn="দৈনন্দিন জীবন ও শিষ্টাচার" data-ja="日常生活とマナー">Daily Life &amp; Manners</h2>
+        <p class="page_sub" data-en="Small habits that make life in Japan easier. Learn them once and you will feel much more at ease." data-bn="যে ছোট অভ্যাসগুলো জাপানের জীবন সহজ করে। একবার শিখে নিলে আপনি অনেক বেশি স্বচ্ছন্দ বোধ করবেন।" data-ja="日本の生活を楽にする小さな習慣。一度覚えれば、ずっと過ごしやすくなります。">Small habits that make life in Japan easier. Learn them once and you will feel much more at ease.</p>
+      </div>
+    </section>
+
+    <!-- On this page -->
+    <nav class="page_nav" aria-label="On this page">
+      <div class="inner">
+        <p data-en="ON THIS PAGE" data-bn="এই পেজে" data-ja="このページ">ON THIS PAGE</p>
+        <ul>
+          <li><a href="#greetings" data-en="Greetings" data-bn="অভিবাদন" data-ja="あいさつ">Greetings</a></li>
+          <li><a href="#garbage" data-en="Garbage" data-bn="আবর্জনা" data-ja="ごみの分別">Garbage</a></li>
+          <li><a href="#quiet" data-en="Quiet in public" data-bn="শান্ত থাকা" data-ja="静かに">Quiet in public</a></li>
+          <li><a href="#eating" data-en="Eating" data-bn="খাওয়া" data-ja="食事">Eating</a></li>
+          <li><a href="#onsen" data-en="Onsen" data-bn="অনসেন" data-ja="温泉">Onsen</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="top_contents">
+      <div class="inner">
+
+        <article class="info reveal" id="greetings">
+          <div class="info_image illust">
+            <img src="images/web/aisatsu.jpg" alt="Illustration of two people bowing politely and saying “Ohayou gozaimasu” (Good morning)" width="722" height="678" loading="lazy" decoding="async">
+          </div>
+          <div class="info_text">
+          <span class="info_number">01</span>
+          <h4 data-en="Greetings and Basic Etiquette" data-bn="অভিবাদন ও মৌলিক শিষ্টাচার" data-ja="あいさつと基本のマナー">Greetings and Basic Etiquette</h4>
+          <p data-en="Say “Ohayou gozaimasu” in the morning, “Konnichiwa” in the daytime, and “Konbanwa” in the evening. A small nod of the head (a light bow) is enough." data-bn="সকালে “ওহায়ো গোজাইমাসু”, দিনের বেলা “কনিচিওয়া” এবং সন্ধ্যায় “কনবানওয়া” বলুন। মাথা সামান্য নুইয়ে হালকা নত হওয়াই যথেষ্ট।" data-ja="朝は「おはようございます」、昼は「こんにちは」、夜は「こんばんは」と言いましょう。軽く会釈をすれば十分です。">Say “Ohayou gozaimasu” in the morning, “Konnichiwa” in the daytime, and “Konbanwa” in the evening. A small nod of the head (a light bow) is enough.</p>
+          <p data-en="Take off your shoes at the entrance (genkan) of a home, and in some restaurants, temples, and schools." data-bn="বাড়ির প্রবেশমুখে (গেনকান) এবং কিছু রেস্তোরাঁ, মন্দির ও স্কুলে জুতা খুলে রাখুন।" data-ja="家の玄関や、一部の飲食店・寺・学校では靴を脱ぎます。">Take off your shoes at the entrance (genkan) of a home, and in some restaurants, temples, and schools.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Look for a raised floor or a shoe rack. That usually means “shoes off”." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; উঁচু মেঝে বা জুতার র‍্যাক দেখলে সাধারণত বুঝবেন জুতা খুলতে হবে।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;床が一段高くなっていたり、靴箱があったりしたら、たいてい「靴を脱ぐ」という合図です。"><strong>Tip:</strong> Look for a raised floor or a shoe rack. That usually means “shoes off”.</p>
+          </div>
+        </article>
+
+
+        <article class="info reverse reveal" id="garbage">
+          <div class="info_image illust">
+            <img src="images/web/gomi.jpg" alt="Illustration of a boy holding two garbage bags: non-burnable (もえないゴミ) and burnable (もえるゴミ)" width="480" height="360" loading="lazy" decoding="async">
+          </div>
+          <div class="info_text">
+          <span class="info_number">02</span>
+          <h4 data-en="Garbage Separation" data-bn="আবর্জনা আলাদা করা" data-ja="ごみの分別">Garbage Separation</h4>
+          <p data-en="Japan has very few public trash cans, and garbage is separated carefully. Put garbage out only on the correct day, usually in the morning, in the designated bag." data-bn="জাপানে সর্বজনীন ময়লার বিন খুব কম, আর আবর্জনা যত্ন করে আলাদা করা হয়। শুধু নির্ধারিত দিনে, সাধারণত সকালে, নির্দিষ্ট ব্যাগে করে আবর্জনা রাখুন।" data-ja="日本には公共のごみ箱が少なく、ごみは細かく分別します。決められた日の朝に、指定の袋に入れて出しましょう。">Japan has very few public trash cans, and garbage is separated carefully. Put garbage out only on the correct day, usually in the morning, in the designated bag.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Ask your city office or landlord for the garbage calendar. Take your trash home if you cannot find a bin." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; সিটি অফিস বা বাড়িওয়ালার কাছ থেকে আবর্জনার ক্যালেন্ডার চেয়ে নিন। বিন না পেলে ময়লা সঙ্গে করে বাসায় নিয়ে যান।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;市役所や大家さんに、ごみ収集カレンダーをもらいましょう。ごみ箱が見つからないときは持ち帰ります。"><strong>Tip:</strong> Ask your city office or landlord for the garbage calendar. Take your trash home if you cannot find a bin.</p>
+          </div>
+        </article>
+
+        <h4 class="sub_title reveal" data-en="Five types of garbage" data-bn="আবর্জনার পাঁচটি ধরন" data-ja="ごみの5つの種類">Five types of garbage</h4>
+<div class="garbage_cards stagger">
+          <div class="garbage_card bin_burn">
+            <h4 data-en="Burnable" data-bn="পোড়ানোর যোগ্য" data-ja="燃えるごみ">Burnable</h4>
+            <p data-en="Kitchen waste, paper scraps, small wood items" data-bn="রান্নাঘরের বর্জ্য, কাগজের টুকরা, ছোট কাঠের জিনিস" data-ja="生ごみ、紙くず、小さな木製品">Kitchen waste, paper scraps, small wood items</p>
+          </div>
+          <div class="garbage_card bin_non">
+            <h4 data-en="Non-burnable" data-bn="না-পোড়ানোর যোগ্য" data-ja="燃えないごみ">Non-burnable</h4>
+            <p data-en="Ceramics, glass items, small metal items" data-bn="সিরামিক, কাঁচের জিনিস, ছোট ধাতব জিনিস" data-ja="陶器、ガラス製品、小さな金属">Ceramics, glass items, small metal items</p>
+          </div>
+          <div class="garbage_card bin_pla">
+            <h4 data-en="Plastic" data-bn="প্লাস্টিক" data-ja="プラスチック">Plastic</h4>
+            <p data-en="Food trays, bottle caps, packaging with the プラ mark" data-bn="খাবারের ট্রে, বোতলের ঢাকনা, “プラ” চিহ্নযুক্ত মোড়ক" data-ja="食品トレー、ペットボトルのキャップ、「プラ」マークの包装">Food trays, bottle caps, packaging with the プラ mark</p>
+          </div>
+          <div class="garbage_card bin_recy">
+            <h4 data-en="Recyclables" data-bn="রিসাইকেলযোগ্য" data-ja="資源ごみ">Recyclables</h4>
+            <p data-en="Cans, glass bottles, PET bottles (remove labels)" data-bn="ক্যান, কাঁচের বোতল, পেট বোতল (লেবেল খুলে)" data-ja="缶、びん、ペットボトル（ラベルをはがす）">Cans, glass bottles, PET bottles (remove labels)</p>
+          </div>
+          <div class="garbage_card bin_big">
+            <h4 data-en="Oversized" data-bn="বড় আকারের" data-ja="粗大ごみ">Oversized</h4>
+            <p data-en="Furniture, bicycles. Book a pickup and pay a fee." data-bn="আসবাব, সাইকেল। আগে বুকিং দিয়ে ফি দিতে হয়।" data-ja="家具、自転車など。事前に申し込み、料金を払います。">Furniture, bicycles. Book a pickup and pay a fee.</p>
+          </div>
+        </div>
+        <p class="table_note reveal" data-en="* Rules are different in each city. Always check your local garbage guide." data-bn="* নিয়ম প্রতিটি শহরে আলাদা। সবসময় নিজের এলাকার নির্দেশিকা দেখে নিন।" data-ja="※ルールは市区町村によって違います。必ずお住まいの地域のごみガイドを確認しましょう。">* Rules are different in each city. Always check your local garbage guide.</p>
+      </div>
+    </section>
+
+    <section class="section section_white">
+      <div class="inner">
+
+        <article class="info reveal" id="quiet">
+          <div class="info_image illust">
+            <img src="images/web/shizuka.jpg" alt="Illustration of passengers on a train seat bothered by a man making loud noise" width="600" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="info_text">
+          <span class="info_number">03</span>
+          <h4 data-en="Quiet Behavior in Public" data-bn="জনসমক্ষে শান্ত আচরণ" data-ja="公共の場での静かな行動">Quiet Behavior in Public</h4>
+          <p data-en="In trains, buses, and elevators, people keep their voices low. Set your phone to silent (manner mode) and avoid phone calls." data-bn="ট্রেন, বাস ও লিফটে মানুষ নিচু স্বরে কথা বলে। ফোন সাইলেন্ট (ম্যানার মোড) করে রাখুন এবং ফোনে কথা বলা এড়িয়ে চলুন।" data-ja="電車、バス、エレベーターでは、小さな声で話します。スマートフォンはマナーモードにして、通話は控えましょう。">In trains, buses, and elevators, people keep their voices low. Set your phone to silent (manner mode) and avoid phone calls.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Short, quiet talking with friends is fine. Phone calls are the main thing to avoid." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; বন্ধুদের সঙ্গে নিচু স্বরে অল্প কথা বলা ঠিক আছে। মূলত ফোনে কথা বলা এড়িয়ে চলতে হবে।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;友達との短い会話を小声でするのは問題ありません。避けたいのは主に電話での通話です。"><strong>Tip:</strong> Short, quiet talking with friends is fine. Phone calls are the main thing to avoid.</p>
+          </div>
+        </article>
+
+
+        <article class="info reverse reveal" id="eating">
+          <div class="info_image illust">
+            <img src="images/web/itadakimasu.jpg" alt="Illustration of a person putting their hands together before a Japanese meal, with the words いただきます and ごちそうさま" width="800" height="533" loading="lazy" decoding="async">
+          </div>
+          <div class="info_text">
+          <span class="info_number">04</span>
+          <h4 data-en="Eating and Drinking Manners" data-bn="খাওয়া ও পানের শিষ্টাচার" data-ja="飲食のマナー">Eating and Drinking Manners</h4>
+          <p data-en="Say “Itadakimasu” before you eat and “Gochisousama deshita” after you finish. These show thanks for the food." data-bn="খাওয়ার আগে “ইতাদাকিমাসু” এবং শেষে “গোচিসোসামা দেশিতা” বলুন। এতে খাবারের জন্য কৃতজ্ঞতা প্রকাশ পায়।" data-ja="食べる前に「いただきます」、食べ終わったら「ごちそうさまでした」と言います。食べ物への感謝を表す言葉です。">Say “Itadakimasu” before you eat and “Gochisousama deshita” after you finish. These show thanks for the food.</p>
+          <p data-en="Do not stand chopsticks upright in rice, and do not pass food from chopsticks to chopsticks. Slurping noodles is normal." data-bn="ভাতের ওপর চপস্টিক খাড়া করে রাখবেন না, আর চপস্টিক থেকে চপস্টিকে খাবার দেবেন না। নুডলস শব্দ করে খাওয়া স্বাভাবিক।" data-ja="ご飯に箸を立てたり、箸から箸へ食べ物を渡したりしてはいけません。麺をすすって食べるのは普通のことです。">Do not stand chopsticks upright in rice, and do not pass food from chopsticks to chopsticks. Slurping noodles is normal.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; There is no tipping in Japan. Eating while walking is usually seen as impolite." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; জাপানে বকশিশ দেওয়ার প্রথা নেই। হাঁটতে হাঁটতে খাওয়াকে সাধারণত অভদ্রতা মনে করা হয়।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;日本にはチップの習慣はありません。歩きながら食べるのは、一般的に失礼とされます。"><strong>Tip:</strong> There is no tipping in Japan. Eating while walking is usually seen as impolite.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section section_gray">
+      <div class="inner">
+
+        <article class="info reveal" id="onsen">
+          <div class="info_image illust">
+            <a href="images/onsen-manners.jpg" target="_blank" rel="noopener"><img src="images/onsen-manners.jpg" alt="A sign showing six onsen manners: no clothes or slippers, no tattoos or drunk people, wash before entering, no towels or long hair in the water, watch children, no food or drinks" width="600" height="480" loading="lazy" decoding="async"></a>
+            <span class="zoom_note" data-en="Click the image to see it larger" data-bn="বড় করে দেখতে ছবিতে ক্লিক করুন" data-ja="画像をクリックすると大きく表示されます">Click the image to see it larger</span>
+          </div>
+          <div class="info_text">
+          <span class="info_number">05</span>
+          <h4 data-en="Onsen and Public Bath Rules" data-bn="অনসেন ও পাবলিক বাথের নিয়ম" data-ja="温泉・公衆浴場のルール">Onsen and Public Bath Rules</h4>
+          <ol class="steps">
+            <li><span data-en="Wash your body well before you enter the bath." data-bn="বাথে নামার আগে শরীর ভালোভাবে ধুয়ে নিন।" data-ja="お風呂に入る前に、体をよく洗います。">Wash your body well before you enter the bath.</span></li>
+            <li><span data-en="Enter without clothes, a swimsuit, or slippers." data-bn="কাপড়, সুইমসুট বা স্লিপার ছাড়া নামুন।" data-ja="衣服、水着、スリッパは身につけずに入ります。">Enter without clothes, a swimsuit, or slippers.</span></li>
+            <li><span data-en="Keep your towel and long hair out of the water." data-bn="তোয়ালে ও লম্বা চুল পানিতে ডোবাবেন না।" data-ja="タオルや長い髪をお湯につけないでください。">Keep your towel and long hair out of the water.</span></li>
+            <li><span data-en="Watch your children and do not run or swim." data-bn="বাচ্চাদের দিকে খেয়াল রাখুন; দৌড়াবেন বা সাঁতার কাটবেন না।" data-ja="子どもから目を離さず、走ったり泳いだりしないでください。">Watch your children and do not run or swim.</span></li>
+            <li><span data-en="Do not bring food or drinks into the bath." data-bn="বাথে খাবার বা পানীয় আনবেন না।" data-ja="飲食物の持ち込みはできません。">Do not bring food or drinks into the bath.</span></li>
+          </ol>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Many baths do not allow tattoos or people who have been drinking. Check the rules before you go." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; অনেক বাথে ট্যাটু থাকলে বা মদ্যপান করে থাকলে ঢুকতে দেওয়া হয় না। যাওয়ার আগে নিয়ম দেখে নিন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;タトゥーのある人や、お酒を飲んだ人は入れないお風呂が多いです。行く前にルールを確認しましょう。"><strong>Tip:</strong> Many baths do not allow tattoos or people who have been drinking. Check the rules before you go.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer (same on every page) ===== -->
+  <footer>
+    <span class="kanji_mark right" aria-hidden="true" lang="ja">楽</span>
+    <div class="inner">
+      <p class="footer_big" aria-hidden="true">ENJOY <span>JAPAN</span></p>
+      <div class="footer_inner">
+        <div class="footer_about">
+          <h4 data-en="ABOUT THIS SITE" data-bn="এই সাইট সম্পর্কে" data-ja="このサイトについて">ABOUT THIS SITE</h4>
+          <p data-en="Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese." data-bn="জাপানের দৈনন্দিন জীবনযাপনের জন্য আপনার সহজ গাইড। জাপানে বসবাসরত বা ভ্রমণকারী বিদেশিদের জন্য একটি শিক্ষার্থী প্রকল্প, ইংরেজি, বাংলা ও জাপানি ভাষায়।" data-ja="日本の日常生活に役立つガイド。日本に住む、または日本を訪れる外国人のための学生作品です。英語・ベンガル語・日本語で読めます。">Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese.</p>
+        </div>
+        <nav aria-label="Footer menu">
+          <h5 data-en="PAGES" data-bn="পেজসমূহ" data-ja="ページ">PAGES</h5>
+          <ul>
+              <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+              <li><a href="daily.html" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+              <li><a href="everyday.html" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+              <li><a href="traffic.html" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+              <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+          </ul>
+        </nav>
+        <div class="footer_sos">
+          <h5 data-en="EMERGENCY" data-bn="জরুরি নম্বর" data-ja="緊急電話">EMERGENCY</h5>
+          <p><strong>110</strong> <span data-en="Police" data-bn="পুলিশ" data-ja="警察">Police</span></p>
+          <p><strong>119</strong> <span data-en="Fire / Ambulance" data-bn="অগ্নিকাণ্ড / অ্যাম্বুলেন্স" data-ja="火事・救急">Fire / Ambulance</span></p>
+          <p class="small" data-en="Free from any phone." data-bn="যেকোনো ফোন থেকে বিনামূল্যে।" data-ja="どの電話からも無料です。">Free from any phone.</p>
+        </div>
+      </div>
+      <p class="copyright" data-en="&amp;copy; 2026 ENJOY JAPAN. All rights reserved." data-bn="&amp;copy; ২০২৬ ENJOY JAPAN। সর্বস্বত্ব সংরক্ষিত।" data-ja="&amp;copy; 2026 ENJOY JAPAN. All rights reserved.">&copy; 2026 ENJOY JAPAN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button type="button" id="to_top" aria-label="Back to top" data-aria-en="Back to top" data-aria-bn="উপরে ফিরে যান" data-aria-ja="ページの先頭へ"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+</body>
+</html>

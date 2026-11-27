@@ -1,0 +1,60 @@
+/* reset.css : removes the default browser styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+table, thead, tbody, tr, th, td, header, footer, main, nav, section,
+article, aside, figure, figcaption, button, details, summary, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+header, footer, main, nav, section, article, aside, figure, figcaption, details {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}

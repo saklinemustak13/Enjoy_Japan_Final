@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Everyday Japan | ENJOY JAPAN" data-bn="প্রতিদিনের জাপান | ENJOY JAPAN" data-ja="身近な日本 | ENJOY JAPAN">Everyday Japan | ENJOY JAPAN</title>
+  <meta name="description" content="How to use convenience stores, ATMs, restaurants, supermarkets, pharmacies, and what to do in an emergency in Japan.">
+  <meta name="theme-color" content="#142B3B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Bengali:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+Bengali:wght@500;600;700&amp;family=Shippori+Mincho:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Loaded here (not at the end of body) so the saved language appears before the page is shown -->
+  <script src="js/script.js"></script>
+</head>
+<body class="page_everyday">
+
+  <div id="loader" aria-hidden="true">
+    <span class="loader_mark"></span>
+    <span class="loader_text">ENJOY JAPAN</span>
+  </div>
+  <div id="scroll_progress" aria-hidden="true"><span></span></div>
+  <a href="#main" class="skip_link" data-en="Skip to main content" data-bn="মূল বিষয়বস্তুতে যান" data-ja="本文へ移動">Skip to main content</a>
+  <div id="top_sentinel" aria-hidden="true"></div>
+
+  <!-- ===== Header (same on every page) ===== -->
+  <header id="header_area">
+    <div class="inner header_inner">
+      <h1 id="logo"><a href="index.html"><span class="logo_mark" aria-hidden="true"></span>ENJOY <span>JAPAN</span></a></h1>
+      <nav id="gnavi" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+          <li><a href="daily.html" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+          <li><a href="everyday.html" class="current" aria-current="page" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+          <li><a href="traffic.html" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+          <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+        </ul>
+      </nav>
+      <div class="header_tools">
+        <div id="lang_switch" role="group" aria-label="Language">
+          <button type="button" class="lang_button active" data-lang="en" lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="bn" lang="bn" aria-pressed="false">বাংলা</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+        </div>
+        <button type="button" id="menu_button" aria-expanded="false" aria-controls="gnavi">
+          <span class="menu_icon" aria-hidden="true"><span></span></span>
+          <span class="menu_label" data-en="MENU" data-bn="মেনু" data-ja="メニュー">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== Page hero ===== -->
+    <section id="pagevisual" aria-labelledby="page_title">
+      <img class="page_photo fade" src="https://images.unsplash.com/photo-1569272955884-48ca11e03183?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="A busy Shibuya street crossing in the daytime, crowded with people" width="1800" height="1000" fetchpriority="high" decoding="async">
+      <div class="page_shade" aria-hidden="true"></div>
+      <span class="kanji_mark right" aria-hidden="true" lang="ja">街</span>
+      <div class="inner pagevisual_text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+            <li><span aria-current="page" data-en="Everyday Japan" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">Everyday Japan</span></li>
+          </ol>
+        </nav>
+        <p class="page_label" data-en="02 · EVERYDAY JAPAN" data-bn="০২ · প্রতিদিনের জাপান" data-ja="02 · 身近な日本">02 · EVERYDAY JAPAN</p>
+        <h2 id="page_title" data-en="Everyday Japan" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">Everyday Japan</h2>
+        <p class="page_sub" data-en="Shopping, paying, eating, and getting help are easy once you know how things work." data-bn="কীভাবে কী হয় জানলে কেনাকাটা, টাকা দেওয়া, খাওয়া এবং সাহায্য চাওয়া সবই সহজ।" data-ja="仕組みがわかれば、買い物、支払い、食事、助けを求めることも簡単です。">Shopping, paying, eating, and getting help are easy once you know how things work.</p>
+      </div>
+    </section>
+
+    <!-- On this page -->
+    <nav class="page_nav" aria-label="On this page">
+      <div class="inner">
+        <p data-en="ON THIS PAGE" data-bn="এই পেজে" data-ja="このページ">ON THIS PAGE</p>
+        <ul>
+          <li><a href="#konbini" data-en="Convenience stores" data-bn="কনভিনিয়েন্স স্টোর" data-ja="コンビニ">Convenience stores</a></li>
+          <li><a href="#payment" data-en="ATM &amp; payment" data-bn="এটিএম ও পেমেন্ট" data-ja="ATM・支払い">ATM &amp; payment</a></li>
+          <li><a href="#restaurant" data-en="Restaurants" data-bn="রেস্তোরাঁ" data-ja="レストラン">Restaurants</a></li>
+          <li><a href="#shopping" data-en="Shopping" data-bn="কেনাকাটা" data-ja="買い物">Shopping</a></li>
+          <li><a href="#emergency" data-en="Emergency" data-bn="জরুরি অবস্থা" data-ja="緊急時">Emergency</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="top_contents">
+      <div class="inner">
+        <div class="section_head reveal">
+          <p class="eyebrow" data-en="USEFUL SERVICES" data-bn="দরকারি সেবা" data-ja="便利なサービス">USEFUL SERVICES</p>
+          <h3 class="section_title" data-en="Useful services around you" data-bn="আপনার আশপাশের দরকারি সেবা" data-ja="身近で便利なサービス">Useful services around you</h3>
+          <p class="lead" data-en="Four places you will visit almost every week." data-bn="চারটি জায়গা, যেখানে আপনি প্রায় প্রতি সপ্তাহে যাবেন।" data-ja="ほぼ毎週利用する4つの場所です。">Four places you will visit almost every week.</p>
+        </div>
+<div class="service_cards stagger">
+          <article class="service_card" id="konbini">
+            <div class="service_image"><img src="images/web/conbini.jpg" alt="Illustration of a customer asking to use the toilet at a Japanese convenience store, and the clerk saying いらっしゃいませ" width="1200" height="670" loading="lazy" decoding="async"></div>
+            <div class="service_body">
+              <h4 data-en="Convenience Store Services" data-bn="কনভিনিয়েন্স স্টোরের সেবা" data-ja="コンビニのサービス">Convenience Store Services</h4>
+              <p data-en="Convenience stores (konbini) such as 7-Eleven, Lawson, and FamilyMart are open almost all day. You can buy food and daily goods, pay bills, send packages, print documents, and use the ATM." data-bn="সেভেন-ইলেভেন, লসন ও ফ্যামিলিমার্টের মতো কনভিনিয়েন্স স্টোর (কোনবিনি) প্রায় সারাদিনই খোলা থাকে। সেখানে খাবার ও দৈনন্দিন জিনিস কেনা, বিল পরিশোধ, পার্সেল পাঠানো, ডকুমেন্ট প্রিন্ট এবং এটিএম ব্যবহার করা যায়।" data-ja="セブン-イレブン、ローソン、ファミリーマートなどのコンビニは、ほぼ一日中開いています。食べ物や日用品の購入、公共料金の支払い、荷物の発送、書類の印刷、ATMの利用ができます。">Convenience stores (konbini) such as 7-Eleven, Lawson, and FamilyMart are open almost all day. You can buy food and daily goods, pay bills, send packages, print documents, and use the ATM.</p>
+              <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Staff will ask “Atatamemasu ka?” (Shall I heat it?). Answer “Hai” (yes) or “Daijoubu desu” (no, thank you)." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; কর্মীরা জিজ্ঞেস করবেন “আতাতামেমাস কা?” (গরম করে দেব?)। উত্তরে বলুন “হাই” (হ্যাঁ) অথবা “দাইজোবু দেস” (না, ধন্যবাদ)।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;店員さんが「温めますか？」と聞いてくれます。「はい」または「大丈夫です」（いりません）と答えましょう。"><strong>Tip:</strong> Staff will ask “Atatamemasu ka?” (Shall I heat it?). Answer “Hai” (yes) or “Daijoubu desu” (no, thank you).</p>
+            </div>
+          </article>
+          <article class="service_card" id="payment">
+            <div class="service_image"><img src="images/web/atm.jpg" alt="Illustration of a woman using an ATM" width="640" height="336" loading="lazy" decoding="async"></div>
+            <div class="service_body">
+              <h4 data-en="ATMs and Cashless Payments" data-bn="এটিএম ও ক্যাশলেস পেমেন্ট" data-ja="ATMとキャッシュレス決済">ATMs and Cashless Payments</h4>
+              <p data-en="Many convenience store ATMs accept foreign cards and have an English menu. IC cards like Suica and PASMO work on trains and in many shops. Credit cards and QR code payments are common." data-bn="কনভিনিয়েন্স স্টোরের অনেক এটিএমে বিদেশি কার্ড চলে এবং ইংরেজি মেনু থাকে। সুইকা ও পাসমোর মতো আইসি কার্ড ট্রেনে এবং বহু দোকানে ব্যবহার করা যায়। ক্রেডিট কার্ড ও কিউআর কোড পেমেন্টও প্রচলিত।" data-ja="コンビニのATMの多くは海外のカードに対応していて、英語メニューもあります。SuicaやPASMOなどのICカードは、電車や多くのお店で使えます。クレジットカードやQRコード決済も一般的です。">Many convenience store ATMs accept foreign cards and have an English menu. IC cards like Suica and PASMO work on trains and in many shops. Credit cards and QR code payments are common.</p>
+              <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Some small restaurants and shops accept cash only. Keep some yen with you." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; কিছু ছোট রেস্তোরাঁ ও দোকানে শুধু নগদ টাকা নেওয়া হয়। সঙ্গে কিছু ইয়েন রাখুন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;小さな飲食店やお店では現金のみのところもあります。いくらか円を持っておきましょう。"><strong>Tip:</strong> Some small restaurants and shops accept cash only. Keep some yen with you.</p>
+            </div>
+          </article>
+          <article class="service_card" id="restaurant">
+            <div class="service_image"><img src="images/web/restaurant.jpg" alt="Illustration of a customer raising his hand and saying すみません to call restaurant staff" width="843" height="583" loading="lazy" decoding="async"></div>
+            <div class="service_body">
+              <h4 data-en="Ordering Food in Restaurants" data-bn="রেস্তোরাঁয় খাবার অর্ডার করা" data-ja="レストランでの注文">Ordering Food in Restaurants</h4>
+              <p data-en="You often get free water and a hot towel (oshibori). To call the staff, say “Sumimasen” or press the call button. Some restaurants use a ticket machine: pay first, then give the ticket to the staff." data-bn="প্রায়ই বিনামূল্যে পানি ও একটি গরম তোয়ালে (ওশিবোরি) দেওয়া হয়। কর্মীকে ডাকতে “সুমিমাসেন” বলুন বা কল বোতাম চাপুন। কিছু রেস্তোরাঁয় টিকিট মেশিন থাকে: আগে টাকা দিয়ে টিকিট নিন, তারপর কর্মীকে দিন।" data-ja="水とおしぼりが無料で出てくることが多いです。店員さんを呼ぶときは「すみません」と言うか、呼び出しボタンを押します。券売機のお店では、先にお金を払って食券をスタッフに渡します。">You often get free water and a hot towel (oshibori). To call the staff, say “Sumimasen” or press the call button. Some restaurants use a ticket machine: pay first, then give the ticket to the staff.</p>
+              <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Tell staff about allergies before you order." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; অর্ডার করার আগে কর্মীদের অ্যালার্জির কথা জানিয়ে দিন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;注文する前に、アレルギーのことを店員さんに伝えましょう。"><strong>Tip:</strong> Tell staff about allergies before you order.</p>
+            </div>
+          </article>
+          <article class="service_card" id="shopping">
+            <div class="service_image"><img src="images/web/pharmacy.jpg" alt="Illustration of a pharmacist explaining how to take cold medicine to a customer" width="1200" height="960" loading="lazy" decoding="async"></div>
+            <div class="service_body">
+              <h4 data-en="Supermarkets and Pharmacies" data-bn="সুপারমার্কেট ও ফার্মেসি" data-ja="スーパーと薬局">Supermarkets and Pharmacies</h4>
+              <p data-en="Many supermarkets lower the price of ready-made meals in the evening. Bring your own bag, because plastic bags cost money. Drugstores sell medicine and daily goods. For stronger medicine, ask the pharmacist." data-bn="অনেক সুপারমার্কেট সন্ধ্যায় তৈরি খাবারের দাম কমিয়ে দেয়। নিজের ব্যাগ আনুন, কারণ প্লাস্টিকের ব্যাগের জন্য টাকা লাগে। ড্রাগস্টোরে ওষুধ ও দৈনন্দিন জিনিস পাওয়া যায়। কড়া ওষুধের জন্য ফার্মাসিস্টকে জিজ্ঞেস করুন।" data-ja="夕方になると、お惣菜やお弁当を値引きするスーパーが多いです。レジ袋は有料なので、マイバッグを持って行きましょう。ドラッグストアでは薬や日用品が買えます。強い薬は薬剤師に相談しましょう。">Many supermarkets lower the price of ready-made meals in the evening. Bring your own bag, because plastic bags cost money. Drugstores sell medicine and daily goods. For stronger medicine, ask the pharmacist.</p>
+              <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Medicine ingredients can differ from your home country. Ask the staff if you are not sure." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; ওষুধের উপাদান আপনার দেশের ওষুধ থেকে আলাদা হতে পারে। নিশ্চিত না হলে কর্মীকে জিজ্ঞেস করুন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;薬の成分は、母国のものと違うことがあります。わからないときは店員さんに聞きましょう。"><strong>Tip:</strong> Medicine ingredients can differ from your home country. Ask the staff if you are not sure.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_dark" id="emergency">
+      <span class="kanji_mark left" aria-hidden="true" lang="ja">救</span>
+      <div class="inner">
+        <div class="section_head reveal">
+          <p class="eyebrow" data-en="EMERGENCY" data-bn="জরুরি অবস্থা" data-ja="緊急時">EMERGENCY</p>
+          <h3 class="section_title" data-en="What to do in an emergency" data-bn="জরুরি অবস্থায় কী করবেন" data-ja="緊急時の対応">What to do in an emergency</h3>
+          <p class="lead" data-en="Stay calm. Speak slowly, say where you are, and tell them what happened." data-bn="শান্ত থাকুন। ধীরে কথা বলুন, আপনি কোথায় আছেন জানান এবং কী ঘটেছে বলুন।" data-ja="落ち着いて、ゆっくり話しましょう。今いる場所と、何があったかを伝えます。">Stay calm. Speak slowly, say where you are, and tell them what happened.</p>
+        </div>
+        <div class="sos stagger">
+          <div class="sos_card police">
+            <span class="sos_number">110</span>
+            <div>
+              <h4 data-en="Police" data-bn="পুলিশ" data-ja="警察">Police</h4>
+              <p data-en="Accidents, crime, lost and found" data-bn="দুর্ঘটনা, অপরাধ, হারানো জিনিস" data-ja="事故、事件、落とし物">Accidents, crime, lost and found</p>
+            </div>
+          </div>
+          <div class="sos_card fire">
+            <span class="sos_number">119</span>
+            <div>
+              <h4 data-en="Fire / Ambulance" data-bn="অগ্নিকাণ্ড / অ্যাম্বুলেন্স" data-ja="火事・救急">Fire / Ambulance</h4>
+              <p data-en="Fire, sudden illness, serious injury" data-bn="আগুন, হঠাৎ অসুস্থতা, গুরুতর আঘাত" data-ja="火事、急な病気、大けが">Fire, sudden illness, serious injury</p>
+            </div>
+          </div>
+        </div>
+
+        <article class="info reveal" id="earthquake">
+          <div class="info_image illust">
+            <a href="images/emergency-119.jpg" target="_blank" rel="noopener"><img src="images/emergency-119.jpg" alt="An illustration of calling 110 or 119, and five steps for an earthquake: protect your head, stay away from windows, follow staff, check phone alerts, know your evacuation place" width="600" height="480" loading="lazy" decoding="async"></a>
+            <span class="zoom_note" data-en="Click the image to see it larger" data-bn="বড় করে দেখতে ছবিতে ক্লিক করুন" data-ja="画像をクリックすると大きく表示されます">Click the image to see it larger</span>
+          </div>
+          <div class="info_text">
+          <span class="info_number">SOS</span>
+          <h4 data-en="Calling for Help and Earthquakes" data-bn="সাহায্যের জন্য ফোন ও ভূমিকম্প" data-ja="電話のかけ方と地震のとき">Calling for Help and Earthquakes</h4>
+          <p data-en="Both numbers are free. For an earthquake: protect your head under a table, stay away from windows, follow the staff, and watch for alerts on your phone." data-bn="দুটি নম্বরই বিনামূল্যে। ভূমিকম্পের সময়: টেবিলের নিচে মাথা বাঁচান, জানালা থেকে দূরে থাকুন, কর্মীদের নির্দেশ মানুন এবং ফোনের সতর্কবার্তা দেখুন।" data-ja="どちらも無料です。地震のときは、机の下で頭を守り、窓から離れ、スタッフの指示に従い、スマートフォンの警報を確認しましょう。">Both numbers are free. For an earthquake: protect your head under a table, stay away from windows, follow the staff, and watch for alerts on your phone.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Find your nearest evacuation place now, and save your embassy&#x27;s phone number." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; এখনই নিকটতম আশ্রয়কেন্দ্র কোথায় জেনে নিন, এবং আপনার দূতাবাসের ফোন নম্বর সেভ করে রাখুন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;近くの避難場所を今のうちに確認し、大使館の電話番号を保存しておきましょう。"><strong>Tip:</strong> Find your nearest evacuation place now, and save your embassy's phone number.</p>
+          </div>
+        </article>
+
+        <h4 class="sub_title reveal" data-en="Emergency phrases" data-bn="জরুরি বাক্য" data-ja="緊急時のフレーズ">Emergency phrases</h4>
+        <div class="table_wrap reveal">
+          <table class="data_table">
+            <thead>
+              <tr>
+                <th scope="col" data-en="Japanese" data-bn="জাপানি" data-ja="日本語">Japanese</th>
+                <th scope="col" data-en="Romaji" data-bn="রোমাজি" data-ja="ローマ字">Romaji</th>
+                <th scope="col">English</th>
+                <th scope="col" lang="bn">বাংলা</th>
+                <th scope="col" data-en="Sound" data-bn="উচ্চারণ" data-ja="音声">Sound</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="jp" lang="ja">助けてください</td>
+                <td>Tasukete kudasai</td>
+                <td>Please help me</td>
+                <td lang="bn">দয়া করে আমাকে সাহায্য করুন</td>
+                <td><button type="button" class="say_button small" data-say="助けてください" data-en="Listen" data-bn="শুনুন" data-ja="聞く">Listen</button></td>
+              </tr>
+              <tr>
+                <td class="jp" lang="ja">救急車を呼んでください</td>
+                <td>Kyuukyuusha o yonde kudasai</td>
+                <td>Please call an ambulance</td>
+                <td lang="bn">দয়া করে অ্যাম্বুলেন্স ডাকুন</td>
+                <td><button type="button" class="say_button small" data-say="救急車を呼んでください" data-en="Listen" data-bn="শুনুন" data-ja="聞く">Listen</button></td>
+              </tr>
+              <tr>
+                <td class="jp" lang="ja">ここはどこですか？</td>
+                <td>Koko wa doko desu ka?</td>
+                <td>Where am I?</td>
+                <td lang="bn">আমি কোথায় আছি?</td>
+                <td><button type="button" class="say_button small" data-say="ここはどこですか？" data-en="Listen" data-bn="শুনুন" data-ja="聞く">Listen</button></td>
+              </tr>
+              <tr>
+                <td class="jp" lang="ja">英語を話せますか？</td>
+                <td>Eigo o hanasemasu ka?</td>
+                <td>Can you speak English?</td>
+                <td lang="bn">আপনি কি ইংরেজি বলতে পারেন?</td>
+                <td><button type="button" class="say_button small" data-say="英語を話せますか？" data-en="Listen" data-bn="শুনুন" data-ja="聞く">Listen</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer (same on every page) ===== -->
+  <footer>
+    <span class="kanji_mark right" aria-hidden="true" lang="ja">楽</span>
+    <div class="inner">
+      <p class="footer_big" aria-hidden="true">ENJOY <span>JAPAN</span></p>
+      <div class="footer_inner">
+        <div class="footer_about">
+          <h4 data-en="ABOUT THIS SITE" data-bn="এই সাইট সম্পর্কে" data-ja="このサイトについて">ABOUT THIS SITE</h4>
+          <p data-en="Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese." data-bn="জাপানের দৈনন্দিন জীবনযাপনের জন্য আপনার সহজ গাইড। জাপানে বসবাসরত বা ভ্রমণকারী বিদেশিদের জন্য একটি শিক্ষার্থী প্রকল্প, ইংরেজি, বাংলা ও জাপানি ভাষায়।" data-ja="日本の日常生活に役立つガイド。日本に住む、または日本を訪れる外国人のための学生作品です。英語・ベンガル語・日本語で読めます。">Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese.</p>
+        </div>
+        <nav aria-label="Footer menu">
+          <h5 data-en="PAGES" data-bn="পেজসমূহ" data-ja="ページ">PAGES</h5>
+          <ul>
+              <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+              <li><a href="daily.html" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+              <li><a href="everyday.html" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+              <li><a href="traffic.html" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+              <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+          </ul>
+        </nav>
+        <div class="footer_sos">
+          <h5 data-en="EMERGENCY" data-bn="জরুরি নম্বর" data-ja="緊急電話">EMERGENCY</h5>
+          <p><strong>110</strong> <span data-en="Police" data-bn="পুলিশ" data-ja="警察">Police</span></p>
+          <p><strong>119</strong> <span data-en="Fire / Ambulance" data-bn="অগ্নিকাণ্ড / অ্যাম্বুলেন্স" data-ja="火事・救急">Fire / Ambulance</span></p>
+          <p class="small" data-en="Free from any phone." data-bn="যেকোনো ফোন থেকে বিনামূল্যে।" data-ja="どの電話からも無料です。">Free from any phone.</p>
+        </div>
+      </div>
+      <p class="copyright" data-en="&amp;copy; 2026 ENJOY JAPAN. All rights reserved." data-bn="&amp;copy; ২০২৬ ENJOY JAPAN। সর্বস্বত্ব সংরক্ষিত।" data-ja="&amp;copy; 2026 ENJOY JAPAN. All rights reserved.">&copy; 2026 ENJOY JAPAN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button type="button" id="to_top" aria-label="Back to top" data-aria-en="Back to top" data-aria-bn="উপরে ফিরে যান" data-aria-ja="ページの先頭へ"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+</body>
+</html>

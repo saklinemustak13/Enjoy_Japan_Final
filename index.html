@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="ENJOY JAPAN | Your guide to everyday life in Japan" data-bn="ENJOY JAPAN | জাপানের দৈনন্দিন জীবনের গাইড" data-ja="ENJOY JAPAN | 日本の日常生活ガイド">ENJOY JAPAN | Your guide to everyday life in Japan</title>
+  <meta name="description" content="Enjoy Japan is a practical guide for foreigners living in or visiting Japan, in English, Bangla, and Japanese.">
+  <meta name="theme-color" content="#142B3B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Bengali:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+Bengali:wght@500;600;700&amp;family=Shippori+Mincho:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Loaded here (not at the end of body) so the saved language appears before the page is shown -->
+  <script src="js/script.js"></script>
+</head>
+
+<body class="page_home">
+
+  <div id="loader" aria-hidden="true">
+    <span class="loader_mark"></span>
+    <span class="loader_text">ENJOY JAPAN</span>
+  </div>
+  <div id="scroll_progress" aria-hidden="true"><span></span></div>
+  <a href="#main" class="skip_link" data-en="Skip to main content" data-bn="মূল বিষয়বস্তুতে যান" data-ja="本文へ移動">Skip to main content</a>
+  <div id="top_sentinel" aria-hidden="true"></div>
+
+  <!-- ===== Header (same on every page) ===== -->
+  <header id="header_area">
+    <div class="inner header_inner">
+      <h1 id="logo"><a href="index.html"><span class="logo_mark" aria-hidden="true"></span>ENJOY <span>JAPAN</span></a></h1>
+      <nav id="gnavi" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html" class="current" aria-current="page" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+          <li><a href="daily.html" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+          <li><a href="everyday.html" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+          <li><a href="traffic.html" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+          <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+        </ul>
+      </nav>
+      <div class="header_tools">
+        <div id="lang_switch" role="group" aria-label="Language">
+          <button type="button" class="lang_button active" data-lang="en" lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="bn" lang="bn" aria-pressed="false">বাংলা</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+        </div>
+        <button type="button" id="menu_button" aria-expanded="false" aria-controls="gnavi">
+          <span class="menu_icon" aria-hidden="true"><span></span></span>
+          <span class="menu_label" data-en="MENU" data-bn="মেনু" data-ja="メニュー">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== 1. Hero ===== -->
+    <section id="mainvisual" aria-labelledby="hero_title">
+      <img class="hero_photo fade" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="A crowded shopping street in Tokyo on a rainy evening, with umbrellas and neon signs" width="1800" height="1100" fetchpriority="high" decoding="async">
+      <div class="hero_overlay" aria-hidden="true"></div>
+      <span class="orb one" aria-hidden="true"></span>
+      <span class="orb two" aria-hidden="true"></span>
+      <div class="petals" aria-hidden="true"></div>
+      <p class="hero_vertical" aria-hidden="true" lang="ja">日本の暮らしを楽しむ</p>
+      <div class="inner hero_content">
+        <p class="hero_label hero_rise" data-en="A GUIDE FOR FOREIGNERS IN JAPAN" data-bn="জাপানে বিদেশিদের জন্য গাইড" data-ja="日本で暮らす外国人のためのガイド">A GUIDE FOR FOREIGNERS IN JAPAN</p>
+        <h2 id="hero_title" class="hero_rise" data-en="Enjoy Japan with Confidence." data-bn="আত্মবিশ্বাসের সঙ্গে জাপানকে উপভোগ করুন।" data-ja="自信を持って日本を楽しもう。">Enjoy Japan with Confidence.</h2>
+        <p class="hero_sub hero_rise" data-en="Your guide to everyday life in Japan — manners, services, transport, and the words that open doors." data-bn="জাপানের দৈনন্দিন জীবনযাপনের জন্য আপনার সহজ গাইড — শিষ্টাচার, সেবা, যাতায়াত আর দরকারি শব্দ।" data-ja="日本の日常生活に役立つガイド。マナー、サービス、交通、そして心をつなぐ言葉。">Your guide to everyday life in Japan — manners, services, transport, and the words that open doors.</p>
+        <div class="button_row hero_rise">
+          <a href="#top_contents" class="button light" data-en="Start Exploring" data-bn="ঘুরে দেখুন" data-ja="さっそく見てみよう">Start Exploring</a>
+          <a href="culture.html" class="button outline" data-en="Learn Japanese Phrases" data-bn="জাপানি বাক্য শিখুন" data-ja="日本語フレーズを学ぶ">Learn Japanese Phrases</a>
+        </div>
+      </div>
+      <span class="scroll_cue" aria-hidden="true" data-en="SCROLL" data-bn="স্ক্রল" data-ja="スクロール">SCROLL</span>
+    </section>
+<!-- ===== Graduation project notice ===== -->
+    <section id="project_notice" aria-labelledby="notice_title">
+      <div class="inner">
+        <div class="notice_box">
+          <span class="notice_icon" aria-hidden="true">!</span>
+          <div>
+            <h3 id="notice_title" data-en="About this website" data-bn="এই ওয়েবসাইট সম্পর্কে" data-ja="このサイトについて">About this website</h3>
+            <p data-en="This website was made as a graduation project for foreigners living in Japan." data-bn="জাপানে বসবাসরত বিদেশিদের জন্য এই ওয়েবসাইটটি একটি গ্র্যাজুয়েশন প্রজেক্ট হিসেবে তৈরি করা হয়েছে।" data-ja="日本で暮らす外国人のために、卒業制作として作ったサイトです。">This website was made as a graduation project for foreigners living in Japan.</p>
+            <p data-en="I have studied for two years in the Web Engineer course at a vocational school." data-bn="আমি একটি ভোকেশনাল স্কুলের ওয়েব ইঞ্জিনিয়ার কোর্সে দুই বছর পড়াশোনা করেছি।" data-ja="専門学校のWEBエンジニア科で、2年間勉強しました。">I have studied for two years in the Web Engineer course at a vocational school.</p>
+            
+        </div>
+      </div>
+    </section>
+    <!-- ===== 2. Introduction ===== -->
+    <section class="section" id="explanation">
+      <div class="inner">
+        <div class="intro_grid">
+          <div class="reveal">
+            <p class="eyebrow" data-en="WELCOME TO ENJOY JAPAN" data-bn="এনজয় জাপানে স্বাগতম" data-ja="Enjoy Japanへようこそ">WELCOME TO ENJOY JAPAN</p>
+            <h3 class="intro_statement" data-en="Japan is safe, clean, and full of surprises — but daily life can feel confusing at first." data-bn="জাপান নিরাপদ, পরিচ্ছন্ন এবং নানা চমকে ভরা — তবে শুরুতে দৈনন্দিন জীবন কিছুটা জটিল মনে হতে পারে।" data-ja="日本は安全で清潔、驚きに満ちた国。でも最初は、毎日の生活に戸惑うこともあります。">Japan is safe, clean, and full of surprises — but daily life can feel confusing at first.</h3>
+            <p class="lead" data-en="Enjoy Japan is a simple, practical guide for foreigners living in or visiting Japan. We explain Japanese manners, daily services, traffic rules, useful phrases, and culture in English, Bangla, and Japanese, so you can feel comfortable from your first day." data-bn="এনজয় জাপান জাপানে বসবাসরত বা ভ্রমণকারী বিদেশিদের জন্য একটি সহজ ও বাস্তব গাইড। আমরা জাপানের শিষ্টাচার, দৈনন্দিন সেবা, ট্রাফিক নিয়ম, দরকারি বাক্য এবং সংস্কৃতি ইংরেজি, বাংলা ও জাপানি ভাষায় ব্যাখ্যা করি, যাতে প্রথম দিন থেকেই আপনি স্বাচ্ছন্দ্য বোধ করেন।" data-ja="Enjoy Japanは、日本に住む、または日本を訪れる外国人のための、やさしく実用的なガイドです。日本のマナー、生活サービス、交通ルール、便利なフレーズ、文化を、英語・ベンガル語・日本語でわかりやすく紹介します。">Enjoy Japan is a simple, practical guide for foreigners living in or visiting Japan. We explain Japanese manners, daily services, traffic rules, useful phrases, and culture in English, Bangla, and Japanese, so you can feel comfortable from your first day.</p>
+          </div>
+          <div class="facts stagger">
+          <div class="fact">
+            <span class="number">110</span>
+            <p data-en="Police" data-bn="পুলিশ" data-ja="警察">Police</p>
+          </div>
+          <div class="fact">
+            <span class="number red">119</span>
+            <p data-en="Fire &amp; Ambulance" data-bn="অগ্নিকাণ্ড ও অ্যাম্বুলেন্স" data-ja="火事・救急">Fire &amp; Ambulance</p>
+          </div>
+          <div class="fact">
+            <span class="number" data-en="LEFT" data-bn="বাঁ দিক" data-ja="左側">LEFT</span>
+            <p data-en="Cars and bicycles keep left" data-bn="গাড়ি ও সাইকেল বাঁ দিক দিয়ে চলে" data-ja="車も自転車も左側通行">Cars and bicycles keep left</p>
+          </div>
+          <div class="fact">
+            <span class="number red">¥0</span>
+            <p data-en="No tipping in Japan" data-bn="জাপানে বকশিশ দিতে হয় না" data-ja="チップは不要">No tipping in Japan</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- ===== 3. Explore Japan ===== -->
+    <section class="section section_white" id="top_contents">
+      <div class="inner">
+        <div class="section_head reveal">
+          <p class="eyebrow" data-en="EXPLORE JAPAN" data-bn="জাপান ঘুরে দেখুন" data-ja="日本を知る">EXPLORE JAPAN</p>
+          <h3 class="section_title" data-en="Four guides to everyday Japan" data-bn="প্রতিদিনের জাপানের চারটি গাইড" data-ja="日本の暮らしを知る4つのガイド">Four guides to everyday Japan</h3>
+          <p class="lead" data-en="Choose a topic to start learning." data-bn="একটি বিষয় বেছে নিয়ে শেখা শুরু করুন।" data-ja="トピックを選んで学び始めましょう。">Choose a topic to start learning.</p>
+        </div>
+        <div class="cards stagger">
+          <article class="card tilt">
+            <a href="daily.html">
+              <div class="card_image">
+                <img class="fade" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="A narrow Japanese alley lit by red paper lanterns at night" width="800" height="1000" loading="lazy" decoding="async">
+                <span class="card_number">01</span>
+                <span class="card_kanji" aria-hidden="true" lang="ja">暮</span>
+              </div>
+              <div class="card_text">
+                <h4 data-en="Daily Life &amp; Manners" data-bn="দৈনন্দিন জীবন ও শিষ্টাচার" data-ja="日常生活とマナー">Daily Life &amp; Manners</h4>
+                <p data-en="Greetings, garbage separation, quiet behavior, eating manners, and onsen rules." data-bn="অভিবাদন, আবর্জনা আলাদা করা, শান্ত আচরণ, খাওয়ার শিষ্টাচার এবং অনসেনের নিয়ম।" data-ja="あいさつ、ごみの分別、公共の場での静かな行動、食事のマナー、温泉のルール。">Greetings, garbage separation, quiet behavior, eating manners, and onsen rules.</p>
+                <span class="more" data-en="Explore" data-bn="ঘুরে দেখুন" data-ja="詳しく見る">Explore</span>
+              </div>
+            </a>
+          </article>
+          <article class="card tilt">
+            <a href="everyday.html">
+              <div class="card_image">
+                <img class="fade" src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="A Tokyo street crossing at night with bright neon signs" width="800" height="1000" loading="lazy" decoding="async">
+                <span class="card_number">02</span>
+                <span class="card_kanji" aria-hidden="true" lang="ja">街</span>
+              </div>
+              <div class="card_text">
+                <h4 data-en="Everyday Japan" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">Everyday Japan</h4>
+                <p data-en="Convenience stores, ATMs, restaurants, supermarkets, pharmacies, and emergencies." data-bn="কনভিনিয়েন্স স্টোর, এটিএম, রেস্তোরাঁ, সুপারমার্কেট, ফার্মেসি এবং জরুরি অবস্থা।" data-ja="コンビニ、ATM、レストラン、スーパー、薬局、緊急時の対応。">Convenience stores, ATMs, restaurants, supermarkets, pharmacies, and emergencies.</p>
+                <span class="more" data-en="Explore" data-bn="ঘুরে দেখুন" data-ja="詳しく見る">Explore</span>
+              </div>
+            </a>
+          </article>
+          <article class="card tilt">
+            <a href="traffic.html">
+              <div class="card_image">
+                <img class="fade" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="A Tokyo street at night with tall vertical shop signs" width="800" height="1000" loading="lazy" decoding="async">
+                <span class="card_number">03</span>
+                <span class="card_kanji" aria-hidden="true" lang="ja">道</span>
+              </div>
+              <div class="card_text">
+                <h4 data-en="Traffic &amp; Getting Around" data-bn="যাতায়াত ও চলাচল" data-ja="交通と移動">Traffic &amp; Getting Around</h4>
+                <p data-en="Train manners, bicycles, crossing roads, escalators, and driving basics." data-bn="ট্রেনের শিষ্টাচার, সাইকেল, রাস্তা পার হওয়া, এস্কেলেটর এবং গাড়ি চালানোর মূল বিষয়।" data-ja="電車のマナー、自転車、道路の渡り方、エスカレーター、運転の基本。">Train manners, bicycles, crossing roads, escalators, and driving basics.</p>
+                <span class="more" data-en="Explore" data-bn="ঘুরে দেখুন" data-ja="詳しく見る">Explore</span>
+              </div>
+            </a>
+          </article>
+          <article class="card tilt">
+            <a href="culture.html">
+              <div class="card_image">
+                <img class="fade" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="A traditional street in Kyoto with a five-story pagoda at dusk" width="800" height="1000" loading="lazy" decoding="async">
+                <span class="card_number">04</span>
+                <span class="card_kanji" aria-hidden="true" lang="ja">和</span>
+              </div>
+              <div class="card_text">
+                <h4 data-en="Communication &amp; Culture" data-bn="যোগাযোগ ও সংস্কৃতি" data-ja="コミュニケーションと文化">Communication &amp; Culture</h4>
+                <p data-en="Useful Japanese phrases, polite behavior, and customs you should know." data-bn="দরকারি জাপানি বাক্য, ভদ্র আচরণ এবং জানা জরুরি কিছু প্রথা।" data-ja="役立つ日本語フレーズ、丁寧な振る舞い、知っておきたい習慣。">Useful Japanese phrases, polite behavior, and customs you should know.</p>
+                <span class="more" data-en="Explore" data-bn="ঘুরে দেখুন" data-ja="詳しく見る">Explore</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. Japanese culture preview ===== -->
+    <section class="section section_indigo pattern_wave" id="culture_preview">
+      <span class="kanji_mark left" aria-hidden="true" lang="ja">和</span>
+      <div class="inner">
+        <div class="split">
+          <div class="reveal from_left">
+            <p class="eyebrow" data-en="JAPANESE CULTURE" data-bn="জাপানি সংস্কৃতি" data-ja="日本の文化">JAPANESE CULTURE</p>
+            <h3 class="section_title" data-en="Small customs, big respect" data-bn="ছোট প্রথা, বড় সম্মান" data-ja="小さな習慣が、大きな敬意に">Small customs, big respect</h3>
+            <p class="lead" data-en="Japanese culture is built on care for others. Knowing a few customs helps you feel at home." data-bn="জাপানি সংস্কৃতির ভিত্তি অন্যের প্রতি যত্ন। কয়েকটি প্রথা জানলেই আপনি নিজের মতো স্বচ্ছন্দ বোধ করবেন।" data-ja="日本の文化は、相手を思いやる気持ちから生まれています。いくつかの習慣を知るだけで、ぐっと過ごしやすくなります。">Japanese culture is built on care for others. Knowing a few customs helps you feel at home.</p>
+            <ul class="custom_items">
+              <li><span class="kanji_small" aria-hidden="true" lang="ja">礼</span><span><strong data-en="Bow or nod" data-bn="মাথা নুইয়ে অভিবাদন" data-ja="お辞儀・会釈">Bow or nod</strong><br><span data-en="A light bow is a normal greeting." data-bn="হালকা মাথা নোয়ানোই সাধারণ অভিবাদন।" data-ja="軽いお辞儀が普通のあいさつです。">A light bow is a normal greeting.</span></span></li>
+              <li><span class="kanji_small" aria-hidden="true" lang="ja">列</span><span><strong data-en="Wait in line" data-bn="লাইনে অপেক্ষা" data-ja="列に並ぶ">Wait in line</strong><br><span data-en="At stations, shops, and restaurants." data-bn="স্টেশন, দোকান ও রেস্তোরাঁয়।" data-ja="駅、お店、レストランで。">At stations, shops, and restaurants.</span></span></li>
+              <li><span class="kanji_small" aria-hidden="true" lang="ja">時</span><span><strong data-en="Be on time" data-bn="সময়মতো থাকুন" data-ja="時間を守る">Be on time</strong><br><span data-en="Punctuality shows respect." data-bn="সময়ানুবর্তিতা সম্মানের প্রকাশ।" data-ja="時間を守ることは敬意の表れです。">Punctuality shows respect.</span></span></li>
+            </ul>
+            <a href="culture.html" class="button light" data-en="Discover the culture" data-bn="সংস্কৃতি জানুন" data-ja="文化を見てみる">Discover the culture</a>
+          </div>
+          <div class="split_visual reveal_image">
+            <img class="fade" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A traditional street in Kyoto with a five-story pagoda at dusk" width="1000" height="1100" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Daily life ===== -->
+    <section class="section" id="daily_preview">
+      <div class="inner">
+        <div class="split reverse">
+          <div class="reveal from_right">
+            <p class="eyebrow" data-en="DAILY LIFE IN JAPAN" data-bn="জাপানে দৈনন্দিন জীবন" data-ja="日本の日常生活">DAILY LIFE IN JAPAN</p>
+            <h3 class="section_title" data-en="Habits that make every day easier" data-bn="যে অভ্যাসগুলো প্রতিটি দিন সহজ করে" data-ja="毎日を楽にする習慣">Habits that make every day easier</h3>
+            <p class="lead" data-en="From the morning greeting to the evening bath — five habits to learn once and use forever." data-bn="সকালের অভিবাদন থেকে সন্ধ্যার গোসল — একবার শিখে সারাজীবন কাজে লাগানোর মতো পাঁচটি অভ্যাস।" data-ja="朝のあいさつから夜のお風呂まで。一度覚えればずっと使える5つの習慣です。">From the morning greeting to the evening bath — five habits to learn once and use forever.</p>
+            <ul class="topic_list stagger">
+              <li><a href="daily.html#greetings"><span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5s1.3 1.8 3.5 1.8 3.5-1.8 3.5-1.8"/><path d="M9 9.5h.01M15 9.5h.01"/></svg></span><span class="topic_name" data-en="Greetings &amp; etiquette" data-bn="অভিবাদন ও শিষ্টাচার" data-ja="あいさつとマナー">Greetings &amp; etiquette</span></a></li>
+              <li><a href="daily.html#garbage"><span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16"/><path d="M18 7v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7"/><path d="M9 7V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V7"/><path d="M10 11v6M14 11v6"/></svg></span><span class="topic_name" data-en="Garbage separation" data-bn="আবর্জনা আলাদা করা" data-ja="ごみの分別">Garbage separation</span></a></li>
+              <li><a href="daily.html#quiet"><span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9 5 6M21 9l-5 6"/></svg></span><span class="topic_name" data-en="Quiet in public" data-bn="জনসমক্ষে শান্ত থাকা" data-ja="公共の場では静かに">Quiet in public</span></a></li>
+              <li><a href="daily.html#eating"><span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v7a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V3"/><path d="M6.5 3v18"/><path d="M20 15V3a4 4 0 0 0-4 4v6a2 2 0 0 0 2 2h2zm0 0v6"/></svg></span><span class="topic_name" data-en="Eating manners" data-bn="খাওয়ার শিষ্টাচার" data-ja="食事のマナー">Eating manners</span></a></li>
+              <li><a href="daily.html#onsen"><span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 15c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0"/><path d="M3 20c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0"/><path d="M8 3c-1.2 1.6 1.2 3 0 5M12 3c-1.2 1.6 1.2 3 0 5M16 3c-1.2 1.6 1.2 3 0 5"/></svg></span><span class="topic_name" data-en="Onsen rules" data-bn="অনসেনের নিয়ম" data-ja="温泉のルール">Onsen rules</span></a></li>
+            </ul>
+            <a href="daily.html" class="button" data-en="Read the Daily Life guide" data-bn="দৈনন্দিন জীবনের গাইড পড়ুন" data-ja="日常生活ガイドを読む">Read the Daily Life guide</a>
+          </div>
+          <div class="split_visual reveal_image">
+            <img class="fade" src="https://images.unsplash.com/photo-1653220329192-ce4d725d352a?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A traditional Japanese breakfast tray with grilled fish, rice, miso soup, and side dishes" width="1000" height="1100" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Everyday services ===== -->
+    <section class="section section_white" id="services_preview">
+      <div class="inner">
+        <div class="section_head reveal">
+          <p class="eyebrow" data-en="EVERYDAY SERVICES" data-bn="দৈনন্দিন সেবা" data-ja="身近なサービス">EVERYDAY SERVICES</p>
+          <h3 class="section_title" data-en="Shopping, paying, eating, and getting help" data-bn="কেনাকাটা, টাকা দেওয়া, খাওয়া ও সাহায্য চাওয়া" data-ja="買い物、支払い、食事、助けを求めるとき">Shopping, paying, eating, and getting help</h3>
+          <p class="lead" data-en="Easy once you know how things work." data-bn="কীভাবে কী হয় জানলেই সব সহজ।" data-ja="仕組みがわかれば簡単です。">Easy once you know how things work.</p>
+        </div>
+        <div class="service_tiles stagger">
+          <a class="service_tile" href="everyday.html#konbini">
+            <span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8 5 4h14l2 4"/><path d="M3 8h18v1.5a2.5 2.5 0 0 1-4.5 1.5 2.5 2.5 0 0 1-4.5 0 2.5 2.5 0 0 1-4.5 0A2.5 2.5 0 0 1 3 9.5z"/><path d="M5 12v8h14v-8"/><path d="M10 20v-5h4v5"/></svg></span>
+            <h4 data-en="Convenience stores" data-bn="কনভিনিয়েন্স স্টোর" data-ja="コンビニ">Convenience stores</h4>
+            <p data-en="Food, bills, packages, and ATMs — almost 24 hours." data-bn="খাবার, বিল, পার্সেল ও এটিএম — প্রায় ২৪ ঘণ্টা।" data-ja="食べ物、支払い、荷物、ATM。ほぼ24時間営業。">Food, bills, packages, and ATMs — almost 24 hours.</p>
+          </a>
+          <a class="service_tile" href="everyday.html#payment">
+            <span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6.5 15h4"/></svg></span>
+            <h4 data-en="ATMs &amp; payment" data-bn="এটিএম ও পেমেন্ট" data-ja="ATMと支払い">ATMs &amp; payment</h4>
+            <p data-en="IC cards, QR codes, and why cash still matters." data-bn="আইসি কার্ড, কিউআর কোড, আর কেন নগদ টাকা এখনো দরকার।" data-ja="ICカード、QRコード、そして現金が必要な理由。">IC cards, QR codes, and why cash still matters.</p>
+          </a>
+          <a class="service_tile" href="everyday.html#restaurant">
+            <span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v7a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V3"/><path d="M6.5 3v18"/><path d="M20 15V3a4 4 0 0 0-4 4v6a2 2 0 0 0 2 2h2zm0 0v6"/></svg></span>
+            <h4 data-en="Restaurants" data-bn="রেস্তোরাঁ" data-ja="レストラン">Restaurants</h4>
+            <p data-en="Ticket machines, call buttons, and how to order." data-bn="টিকিট মেশিন, কল বোতাম আর অর্ডার দেওয়ার নিয়ম।" data-ja="券売機、呼び出しボタン、注文の仕方。">Ticket machines, call buttons, and how to order.</p>
+          </a>
+          <a class="service_tile" href="everyday.html#shopping">
+            <span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 7h12l1 14H5z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg></span>
+            <h4 data-en="Shops &amp; pharmacies" data-bn="দোকান ও ফার্মেসি" data-ja="スーパーと薬局">Shops &amp; pharmacies</h4>
+            <p data-en="Evening discounts, shopping bags, and medicine." data-bn="সন্ধ্যার ছাড়, শপিং ব্যাগ আর ওষুধ।" data-ja="夕方の値引き、レジ袋、薬のこと。">Evening discounts, shopping bags, and medicine.</p>
+          </a>
+          <a class="service_tile is_sos" href="everyday.html#emergency">
+            <span class="topic_icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10.3 3.8 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.8a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span>
+            <h4 data-en="Emergency" data-bn="জরুরি অবস্থা" data-ja="緊急時">Emergency</h4>
+            <p data-en="110 police · 119 fire and ambulance." data-bn="১১০ পুলিশ · ১১৯ অগ্নিকাণ্ড ও অ্যাম্বুলেন্স।" data-ja="110 警察 · 119 火事・救急。">110 police · 119 fire and ambulance.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. Transportation & traffic ===== -->
+    <section class="section section_dark" id="traffic_preview">
+      <svg class="route_svg" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <path class="route_base" d="M-40 470 C 220 470, 300 300, 520 300 S 820 420, 1000 260 S 1300 120, 1500 160"/>
+        <path class="route_line" d="M-40 470 C 220 470, 300 300, 520 300 S 820 420, 1000 260 S 1300 120, 1500 160"/>
+        <path class="route_base" d="M-40 140 C 260 140, 420 220, 640 200 S 1060 40, 1500 90"/>
+        <path class="route_line2" d="M-40 140 C 260 140, 420 220, 640 200 S 1060 40, 1500 90"/>
+        <circle cx="520" cy="300" r="9"/>
+        <circle cx="1000" cy="260" r="9"/>
+        <circle cx="640" cy="200" r="7"/>
+      </svg>
+      <div class="inner">
+        <div class="carousel_head">
+          <div class="section_head reveal">
+          <p class="eyebrow" data-en="TRANSPORTATION &amp; TRAFFIC" data-bn="যাতায়াত ও ট্রাফিক" data-ja="交通と移動">TRANSPORTATION &amp; TRAFFIC</p>
+          <h3 class="section_title" data-en="Five rules for getting around" data-bn="চলাফেরার পাঁচটি নিয়ম" data-ja="移動のための5つのルール">Five rules for getting around</h3>
+          <p class="lead" data-en="Japan has one of the best train systems in the world. Roads are safe too, if you know the rules." data-bn="জাপানের ট্রেন ব্যবস্থা বিশ্বের অন্যতম সেরা। নিয়ম জানা থাকলে রাস্তাঘাটও নিরাপদ।" data-ja="日本の鉄道は世界でもトップクラス。ルールを知っていれば、道路も安全です。">Japan has one of the best train systems in the world. Roads are safe too, if you know the rules.</p>
+        </div>
+          <a href="traffic.html" class="button light reveal" data-en="Traffic guide" data-bn="যাতায়াত গাইড" data-ja="交通ガイド">Traffic guide</a>
+        </div>
+        <div class="rule_grid stagger">
+          <div class="rule">
+            <span class="rule_number">01</span>
+            <h4 data-en="Keep left" data-bn="বাঁ দিক ধরে চলুন" data-ja="左側通行">Keep left</h4>
+            <p data-en="Cars and bicycles drive on the left." data-bn="গাড়ি ও সাইকেল বাঁ দিক দিয়ে চলে।" data-ja="車も自転車も左側を走ります。">Cars and bicycles drive on the left.</p>
+          </div>
+          <div class="rule">
+            <span class="rule_number">02</span>
+            <h4 data-en="Wait for green" data-bn="সবুজের জন্য অপেক্ষা" data-ja="青信号を待つ">Wait for green</h4>
+            <p data-en="Even when no cars are coming." data-bn="রাস্তায় গাড়ি না থাকলেও।" data-ja="車が来ていなくても待ちます。">Even when no cars are coming.</p>
+          </div>
+          <div class="rule">
+            <span class="rule_number">03</span>
+            <h4 data-en="Line up" data-bn="লাইনে দাঁড়ান" data-ja="整列乗車">Line up</h4>
+            <p data-en="Let people get off the train first." data-bn="আগে যাত্রীদের ট্রেন থেকে নামতে দিন।" data-ja="降りる人が先です。">Let people get off the train first.</p>
+          </div>
+          <div class="rule">
+            <span class="rule_number">04</span>
+            <h4 data-en="Quiet trains" data-bn="ট্রেনে শান্ত থাকুন" data-ja="車内は静かに">Quiet trains</h4>
+            <p data-en="Phone on silent, no calls." data-bn="ফোন সাইলেন্টে, কোনো কল নয়।" data-ja="マナーモードにして、通話はしません。">Phone on silent, no calls.</p>
+          </div>
+          <div class="rule">
+            <span class="rule_number">05</span>
+            <h4 data-en="Never drink &amp; ride" data-bn="মদ্যপানের পর চালাবেন না" data-ja="飲酒運転は絶対ダメ">Never drink &amp; ride</h4>
+            <p data-en="Not a car, not a bicycle." data-bn="গাড়ি নয়, সাইকেলও নয়।" data-ja="車も自転車もダメです。">Not a car, not a bicycle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. Useful Japanese expressions ===== -->
+    <section class="section" id="phrases">
+      <div class="inner">
+        <div class="section_head center reveal">
+          <p class="eyebrow" data-en="USEFUL JAPANESE" data-bn="দরকারি জাপানি" data-ja="役立つ日本語">USEFUL JAPANESE</p>
+          <h3 class="section_title" data-en="Three words that make a big difference" data-bn="তিনটি শব্দ, যা বড় পার্থক্য গড়ে দেয়" data-ja="大きな違いを生む3つの言葉">Three words that make a big difference</h3>
+          <p class="lead" data-en="Press “Listen” to hear how they sound." data-bn="উচ্চারণ শুনতে “শুনুন” চাপুন।" data-ja="「聞く」を押すと発音が聞けます。">Press “Listen” to hear how they sound.</p>
+        </div>
+        <div class="phrase_cards stagger">
+          <div class="phrase_card">
+            <p class="japanese" lang="ja">すみません</p>
+            <p class="romaji">Sumimasen</p>
+            <div class="meaning_row">
+              <span class="meaning_tag">EN · Excuse me / Sorry</span>
+              <span class="meaning_tag" lang="bn">বাংলা · মাফ করবেন / দুঃখিত</span>
+            </div>
+            <p class="phrase_use" data-en="Use it to get attention, say sorry, or thank someone for their trouble." data-bn="মনোযোগ আকর্ষণ করতে, ক্ষমা চাইতে, বা কারও কষ্টের জন্য কৃতজ্ঞতা জানাতে ব্যবহার করুন।" data-ja="声をかけるとき、謝るとき、相手の手間に感謝するときに使います。">Use it to get attention, say sorry, or thank someone for their trouble.</p>
+            <button type="button" class="say_button" data-say="すみません" data-en="Listen" data-bn="শুনুন" data-ja="聞く">Listen</button>
+          </div>
+          <div class="phrase_card">
+            <p class="japanese" lang="ja">ありがとう</p>
+            <p class="romaji">Arigatou</p>
+            <div class="meaning_row">
+              <span class="meaning_tag">EN · Thank you</span>
+              <span class="meaning_tag" lang="bn">বাংলা · ধন্যবাদ</span>
+            </div>
+            <p class="phrase_use" data-en="Add “gozaimasu” to be more polite." data-bn="আরও ভদ্রভাবে বলতে শেষে “গোজাইমাসু” যোগ করুন।" data-ja="もっと丁寧に言うときは「ありがとうございます」と言います。">Add “gozaimasu” to be more polite.</p>
+            <button type="button" class="say_button" data-say="ありがとう" data-en="Listen" data-bn="শুনুন" data-ja="聞く">Listen</button>
+          </div>
+          <div class="phrase_card">
+            <p class="japanese" lang="ja">お願いします</p>
+            <p class="romaji">Onegaishimasu</p>
+            <div class="meaning_row">
+              <span class="meaning_tag">EN · Please</span>
+              <span class="meaning_tag" lang="bn">বাংলা · অনুগ্রহ করে</span>
+            </div>
+            <p class="phrase_use" data-en="Use it when you ask for something politely." data-bn="কিছু চাইতে বা অনুরোধ করতে বিনয়ের সঙ্গে ব্যবহার করুন।" data-ja="何かをお願いするときに、丁寧な気持ちを込めて使います。">Use it when you ask for something politely.</p>
+            <button type="button" class="say_button" data-say="お願いします" data-en="Listen" data-bn="শুনুন" data-ja="聞く">Listen</button>
+          </div>
+        </div>
+        <div class="center_row reveal">
+          <a href="culture.html#phrase_table" class="button" data-en="See All Phrases" data-bn="সব বাক্য দেখুন" data-ja="フレーズをすべて見る">See All Phrases</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. Featured tips ===== -->
+    <section class="section section_gray" id="info">
+      <div class="inner">
+        <div class="carousel_head">
+          <div class="section_head reveal">
+          <p class="eyebrow" data-en="FEATURED TIPS" data-bn="বিশেষ টিপস" data-ja="おすすめのヒント">FEATURED TIPS</p>
+          <h3 class="section_title" data-en="Tips for foreigners in Japan" data-bn="জাপানে বিদেশিদের জন্য টিপস" data-ja="外国人のための暮らしのヒント">Tips for foreigners in Japan</h3>
+          <p class="lead" data-en="Short reminders for living in Japan." data-bn="জাপানে বসবাসের জন্য কিছু ছোট মনে রাখার বিষয়।" data-ja="日本で暮らすための短いメモです。">Short reminders for living in Japan.</p>
+        </div>
+          <div class="carousel_buttons reveal">
+            <button type="button" class="carousel_btn prev" aria-controls="tips_track" aria-label="Previous tip" data-aria-en="Previous tip" data-aria-bn="আগের টিপ" data-aria-ja="前のヒント"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg></button>
+            <button type="button" class="carousel_btn next" aria-controls="tips_track" aria-label="Next tip" data-aria-en="Next tip" data-aria-bn="পরের টিপ" data-aria-ja="次のヒント"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <ul class="tips_track" id="tips_track" tabindex="0" aria-label="Tips">
+          <li class="tip_card">
+            <span class="date" aria-hidden="true">01</span>
+            <p class="tip_text" data-en="Carry a little cash. Many small shops and restaurants still do not accept cards." data-bn="কিছু নগদ টাকা সঙ্গে রাখুন। অনেক ছোট দোকান ও রেস্তোরাঁয় এখনো কার্ড নেওয়া হয় না।" data-ja="少し現金を持ち歩きましょう。小さなお店や飲食店では、まだカードが使えないところも多いです。">Carry a little cash. Many small shops and restaurants still do not accept cards.</p>
+          </li>
+          <li class="tip_card">
+            <span class="date" aria-hidden="true">02</span>
+            <p class="tip_text" data-en="Get an IC card such as Suica or PASMO for trains, buses, and convenience stores." data-bn="ট্রেন, বাস ও কনভিনিয়েন্স স্টোরের জন্য সুইকা বা পাসমোর মতো একটি আইসি কার্ড নিন।" data-ja="電車・バス・コンビニで使えるSuicaやPASMOなどのICカードを用意しましょう。">Get an IC card such as Suica or PASMO for trains, buses, and convenience stores.</p>
+          </li>
+          <li class="tip_card">
+            <span class="date" aria-hidden="true">03</span>
+            <p class="tip_text" data-en="Save the emergency numbers: 110 for police and 119 for fire or ambulance." data-bn="জরুরি নম্বর সেভ করে রাখুন: পুলিশের জন্য ১১০, আর অগ্নিকাণ্ড বা অ্যাম্বুলেন্সের জন্য ১১৯।" data-ja="緊急電話番号を保存しておきましょう。警察は110、火事・救急は119です。">Save the emergency numbers: 110 for police and 119 for fire or ambulance.</p>
+          </li>
+          <li class="tip_card">
+            <span class="date" aria-hidden="true">04</span>
+            <p class="tip_text" data-en="Check your city&#x27;s garbage calendar. Collection days depend on the area." data-bn="আপনার শহরের আবর্জনা সংগ্রহের ক্যালেন্ডার দেখে নিন। সংগ্রহের দিন এলাকাভেদে আলাদা হয়।" data-ja="お住まいの地域のごみ収集カレンダーを確認しましょう。収集日は地域によって違います。">Check your city's garbage calendar. Collection days depend on the area.</p>
+          </li>
+          <li class="tip_card">
+            <span class="date" aria-hidden="true">05</span>
+            <p class="tip_text" data-en="Last trains leave around midnight. Check the time before you go out at night." data-bn="শেষ ট্রেন সাধারণত মধ্যরাতের কাছাকাছি ছাড়ে। রাতে বের হওয়ার আগে সময় দেখে নিন।" data-ja="終電は夜12時ごろです。夜に出かける前に、時間を確認しましょう。">Last trains leave around midnight. Check the time before you go out at night.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 10. Call to action ===== -->
+    <section class="section" id="cta">
+      <div class="inner">
+        <div class="cta reveal zoom">
+          <span class="orb one" aria-hidden="true"></span>
+          <span class="orb three" aria-hidden="true"></span>
+          <div class="petals" data-count="10" aria-hidden="true"></div>
+          <span class="kanji_mark right" aria-hidden="true" lang="ja">楽</span>
+          <h3 data-en="Ready to start your life in Japan?" data-bn="জাপানে আপনার জীবন শুরু করতে প্রস্তুত?" data-ja="日本での暮らしを始めましょう">Ready to start your life in Japan?</h3>
+          <p data-en="Learn the rules, understand the culture, and enjoy Japan." data-bn="নিয়ম শিখুন, সংস্কৃতি বুঝুন, আর জাপানকে উপভোগ করুন।" data-ja="ルールを知って、文化を理解して、日本を楽しもう。">Learn the rules, understand the culture, and enjoy Japan.</p>
+          <div class="button_row">
+            <a href="daily.html" class="button light" data-en="Start with Daily Life" data-bn="দৈনন্দিন জীবন দিয়ে শুরু করুন" data-ja="日常生活から始める">Start with Daily Life</a>
+            <a href="everyday.html#emergency" class="button outline" data-en="Emergency numbers" data-bn="জরুরি নম্বর" data-ja="緊急電話番号">Emergency numbers</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer (same on every page) ===== -->
+  <footer>
+    <span class="kanji_mark right" aria-hidden="true" lang="ja">楽</span>
+    <div class="inner">
+      <p class="footer_big" aria-hidden="true">ENJOY <span>JAPAN</span></p>
+      <div class="footer_inner">
+        <div class="footer_about">
+          <h4 data-en="ABOUT THIS SITE" data-bn="এই সাইট সম্পর্কে" data-ja="このサイトについて">ABOUT THIS SITE</h4>
+          <p data-en="Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese." data-bn="জাপানের দৈনন্দিন জীবনযাপনের জন্য আপনার সহজ গাইড। জাপানে বসবাসরত বা ভ্রমণকারী বিদেশিদের জন্য একটি শিক্ষার্থী প্রকল্প, ইংরেজি, বাংলা ও জাপানি ভাষায়।" data-ja="日本の日常生活に役立つガイド。日本に住む、または日本を訪れる外国人のための学生作品です。英語・ベンガル語・日本語で読めます。">Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese.</p>
+        </div>
+        <nav aria-label="Footer menu">
+          <h5 data-en="PAGES" data-bn="পেজসমূহ" data-ja="ページ">PAGES</h5>
+          <ul>
+              <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+              <li><a href="daily.html" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+              <li><a href="everyday.html" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+              <li><a href="traffic.html" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+              <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+          </ul>
+        </nav>
+        <div class="footer_sos">
+          <h5 data-en="EMERGENCY" data-bn="জরুরি নম্বর" data-ja="緊急電話">EMERGENCY</h5>
+          <p><strong>110</strong> <span data-en="Police" data-bn="পুলিশ" data-ja="警察">Police</span></p>
+          <p><strong>119</strong> <span data-en="Fire / Ambulance" data-bn="অগ্নিকাণ্ড / অ্যাম্বুলেন্স" data-ja="火事・救急">Fire / Ambulance</span></p>
+          <p class="small" data-en="Free from any phone." data-bn="যেকোনো ফোন থেকে বিনামূল্যে।" data-ja="どの電話からも無料です。">Free from any phone.</p>
+        </div>
+      </div>
+      <p class="copyright" data-en="&amp;copy; 2026 ENJOY JAPAN. All rights reserved." data-bn="&amp;copy; ২০২৬ ENJOY JAPAN। সর্বস্বত্ব সংরক্ষিত।" data-ja="&amp;copy; 2026 ENJOY JAPAN. All rights reserved.">&copy; 2026 ENJOY JAPAN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button type="button" id="to_top" aria-label="Back to top" data-aria-en="Back to top" data-aria-bn="উপরে ফিরে যান" data-aria-ja="ページの先頭へ"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+</body>
+</html>

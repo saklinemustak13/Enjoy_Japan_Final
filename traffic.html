@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Traffic &amp; Getting Around | ENJOY JAPAN" data-bn="যাতায়াত ও চলাচল | ENJOY JAPAN" data-ja="交通と移動 | ENJOY JAPAN">Traffic &amp; Getting Around | ENJOY JAPAN</title>
+  <meta name="description" content="Train manners, bicycle rules, safe walking, escalator etiquette, and basic driving information in Japan.">
+  <meta name="theme-color" content="#142B3B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Bengali:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+Bengali:wght@500;600;700&amp;family=Shippori+Mincho:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Loaded here (not at the end of body) so the saved language appears before the page is shown -->
+  <script src="js/script.js"></script>
+</head>
+<body class="page_traffic">
+
+  <div id="loader" aria-hidden="true">
+    <span class="loader_mark"></span>
+    <span class="loader_text">ENJOY JAPAN</span>
+  </div>
+  <div id="scroll_progress" aria-hidden="true"><span></span></div>
+  <a href="#main" class="skip_link" data-en="Skip to main content" data-bn="মূল বিষয়বস্তুতে যান" data-ja="本文へ移動">Skip to main content</a>
+  <div id="top_sentinel" aria-hidden="true"></div>
+
+  <!-- ===== Header (same on every page) ===== -->
+  <header id="header_area">
+    <div class="inner header_inner">
+      <h1 id="logo"><a href="index.html"><span class="logo_mark" aria-hidden="true"></span>ENJOY <span>JAPAN</span></a></h1>
+      <nav id="gnavi" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+          <li><a href="daily.html" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+          <li><a href="everyday.html" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+          <li><a href="traffic.html" class="current" aria-current="page" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+          <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+        </ul>
+      </nav>
+      <div class="header_tools">
+        <div id="lang_switch" role="group" aria-label="Language">
+          <button type="button" class="lang_button active" data-lang="en" lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="bn" lang="bn" aria-pressed="false">বাংলা</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang_button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+        </div>
+        <button type="button" id="menu_button" aria-expanded="false" aria-controls="gnavi">
+          <span class="menu_icon" aria-hidden="true"><span></span></span>
+          <span class="menu_label" data-en="MENU" data-bn="মেনু" data-ja="メニュー">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== Page hero ===== -->
+    <section id="pagevisual" aria-labelledby="page_title">
+      <svg class="route_svg" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <path class="route_base" d="M-40 470 C 220 470, 300 300, 520 300 S 820 420, 1000 260 S 1300 120, 1500 160"/>
+        <path class="route_line" d="M-40 470 C 220 470, 300 300, 520 300 S 820 420, 1000 260 S 1300 120, 1500 160"/>
+        <path class="route_base" d="M-40 140 C 260 140, 420 220, 640 200 S 1060 40, 1500 90"/>
+        <path class="route_line2" d="M-40 140 C 260 140, 420 220, 640 200 S 1060 40, 1500 90"/>
+        <circle cx="520" cy="300" r="9"/>
+        <circle cx="1000" cy="260" r="9"/>
+        <circle cx="640" cy="200" r="7"/>
+      </svg>
+      <span class="kanji_mark right" aria-hidden="true" lang="ja">道</span>
+      <div class="road" aria-hidden="true">
+        <span class="road_label" lang="ja">左側通行 · KEEP LEFT</span>
+        <div class="lane lane_right">
+          <span class="car car_red"><svg class="car_svg" viewBox="0 0 80 40" focusable="false"><rect class="car_wheel" x="12" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="12" y="32" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="32" width="12" height="6" rx="2"/><rect class="car_body" x="2" y="5" width="76" height="30" rx="10"/><path class="car_glass" d="M50 9h8a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6h-8z"/><path class="car_glass" d="M14 10h8v20h-8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"/><rect class="car_roof" x="24" y="10" width="24" height="20" rx="4"/><rect class="car_light" x="75" y="9" width="3" height="6" rx="1.5"/><rect class="car_light" x="75" y="25" width="3" height="6" rx="1.5"/></svg></span>
+          <span class="car car_cream"><svg class="car_svg" viewBox="0 0 80 40" focusable="false"><rect class="car_wheel" x="12" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="12" y="32" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="32" width="12" height="6" rx="2"/><rect class="car_body" x="2" y="5" width="76" height="30" rx="10"/><path class="car_glass" d="M50 9h8a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6h-8z"/><path class="car_glass" d="M14 10h8v20h-8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"/><rect class="car_roof" x="24" y="10" width="24" height="20" rx="4"/><rect class="car_light" x="75" y="9" width="3" height="6" rx="1.5"/><rect class="car_light" x="75" y="25" width="3" height="6" rx="1.5"/></svg></span>
+        </div>
+        <div class="lane lane_left">
+          <span class="car car_sakura"><svg class="car_svg" viewBox="0 0 80 40" focusable="false"><rect class="car_wheel" x="12" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="12" y="32" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="32" width="12" height="6" rx="2"/><rect class="car_body" x="2" y="5" width="76" height="30" rx="10"/><path class="car_glass" d="M50 9h8a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6h-8z"/><path class="car_glass" d="M14 10h8v20h-8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"/><rect class="car_roof" x="24" y="10" width="24" height="20" rx="4"/><rect class="car_light" x="75" y="9" width="3" height="6" rx="1.5"/><rect class="car_light" x="75" y="25" width="3" height="6" rx="1.5"/></svg></span>
+          <span class="car car_indigo"><svg class="car_svg" viewBox="0 0 80 40" focusable="false"><rect class="car_wheel" x="12" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="2" width="12" height="6" rx="2"/><rect class="car_wheel" x="12" y="32" width="12" height="6" rx="2"/><rect class="car_wheel" x="54" y="32" width="12" height="6" rx="2"/><rect class="car_body" x="2" y="5" width="76" height="30" rx="10"/><path class="car_glass" d="M50 9h8a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6h-8z"/><path class="car_glass" d="M14 10h8v20h-8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"/><rect class="car_roof" x="24" y="10" width="24" height="20" rx="4"/><rect class="car_light" x="75" y="9" width="3" height="6" rx="1.5"/><rect class="car_light" x="75" y="25" width="3" height="6" rx="1.5"/></svg></span>
+        </div>
+      </div>
+      <div class="inner pagevisual_text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+            <li><span aria-current="page" data-en="Traffic" data-bn="যাতায়াত" data-ja="交通">Traffic</span></li>
+          </ol>
+        </nav>
+        <p class="page_label" data-en="03 · TRAFFIC &amp; GETTING AROUND" data-bn="০৩ · যাতায়াত ও চলাচল" data-ja="03 · 交通と移動">03 · TRAFFIC &amp; GETTING AROUND</p>
+        <h2 id="page_title" data-en="Traffic &amp; Getting Around" data-bn="যাতায়াত ও চলাচল" data-ja="交通と移動">Traffic &amp; Getting Around</h2>
+        <p class="page_sub" data-en="Japan has one of the best train systems in the world. Roads are safe too, if you know the rules." data-bn="জাপানের ট্রেন ব্যবস্থা বিশ্বের অন্যতম সেরা। নিয়ম জানা থাকলে রাস্তাঘাটও নিরাপদ।" data-ja="日本の鉄道は世界でもトップクラスです。ルールを知っていれば、道路も安全に使えます。">Japan has one of the best train systems in the world. Roads are safe too, if you know the rules.</p>
+      </div>
+    </section>
+
+    <!-- On this page -->
+    <nav class="page_nav" aria-label="On this page">
+      <div class="inner">
+        <p data-en="ON THIS PAGE" data-bn="এই পেজে" data-ja="このページ">ON THIS PAGE</p>
+        <ul>
+          <li><a href="#trains" data-en="Trains" data-bn="ট্রেন" data-ja="電車">Trains</a></li>
+          <li><a href="#bicycles" data-en="Bicycles" data-bn="সাইকেল" data-ja="自転車">Bicycles</a></li>
+          <li><a href="#walking" data-en="Walking" data-bn="হাঁটা" data-ja="歩行">Walking</a></li>
+          <li><a href="#escalators" data-en="Escalators" data-bn="এস্কেলেটর" data-ja="エスカレーター">Escalators</a></li>
+          <li><a href="#driving" data-en="Driving" data-bn="গাড়ি চালানো" data-ja="運転">Driving</a></li>
+          <li><a href="#checklist" data-en="Checklist" data-bn="চেকলিস্ট" data-ja="チェック">Checklist</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="top_contents">
+      <div class="inner">
+        <div class="section_head reveal">
+          <p class="eyebrow" data-en="YOUR ROUTE" data-bn="আপনার পথ" data-ja="移動のルート">YOUR ROUTE</p>
+          <h3 class="section_title" data-en="Move around safely and politely" data-bn="নিরাপদে ও ভদ্রভাবে চলাচল করুন" data-ja="安全に、マナーを守って移動しよう">Move around safely and politely</h3>
+          <p class="lead" data-en="Five stops on your way around Japan." data-bn="জাপানে চলাফেরার পথে পাঁচটি স্টপ।" data-ja="日本を移動するための5つのポイントです。">Five stops on your way around Japan.</p>
+        </div>
+        <div class="route">
+
+        <article class="info reveal" id="trains">
+          <div class="info_image illust">
+            <img src="images/web/train.jpg" alt="Illustration of train passengers annoyed by a man talking loudly on his phone" width="500" height="296" loading="lazy" decoding="async">
+          </div>
+          <div class="info_text">
+          <span class="info_number">STOP 01</span>
+          <h4 data-en="Train and Station Manners" data-bn="ট্রেন ও স্টেশনের শিষ্টাচার" data-ja="電車・駅でのマナー">Train and Station Manners</h4>
+          <p data-en="Line up at the marks on the platform and let people get off first. Do not block the door. Hold a big backpack in front or put it on the shelf." data-bn="প্ল্যাটফর্মের চিহ্নের জায়গায় লাইনে দাঁড়ান এবং আগে যাত্রীদের নামতে দিন। দরজা আটকে দাঁড়াবেন না। বড় ব্যাকপ্যাক সামনে ধরুন বা তাকে রাখুন।" data-ja="ホームの乗車位置の印に並び、降りる人を先に通します。ドアをふさがないでください。大きなリュックは前に持つか、棚の上に置きましょう。">Line up at the marks on the platform and let people get off first. Do not block the door. Hold a big backpack in front or put it on the shelf.</p>
+          <p data-en="Priority seats are for older people, pregnant women, people with disabilities, and people with small children." data-bn="প্রায়োরিটি সিট বয়স্ক মানুষ, গর্ভবতী নারী, প্রতিবন্ধী ব্যক্তি এবং ছোট বাচ্চাসহ মানুষের জন্য।" data-ja="優先席は、高齢の方、妊娠中の方、障がいのある方、小さな子ども連れの方のための席です。">Priority seats are for older people, pregnant women, people with disabilities, and people with small children.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Rush hour is about 7:30 to 9:00 in the morning. Avoid it if you can." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; সকালে প্রায় ৭:৩০ থেকে ৯:০০টা পর্যন্ত ভিড়ের সময়। পারলে এড়িয়ে চলুন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;朝のラッシュは7:30〜9:00ごろです。できれば避けましょう。"><strong>Tip:</strong> Rush hour is about 7:30 to 9:00 in the morning. Avoid it if you can.</p>
+          </div>
+        </article>
+
+
+        <article class="info reverse reveal" id="bicycles">
+          <div class="info_image illust">
+            <a href="images/web/cycle.jpg" target="_blank" rel="noopener"><img src="images/web/cycle.jpg" alt="Poster of the five bicycle safety rules: ride on the road on the left, stop at signals, use a light at night, no drinking and riding, wear a helmet" width="1152" height="928" loading="lazy" decoding="async"></a>
+            <span class="zoom_note" data-en="Click the image to see it larger" data-bn="বড় করে দেখতে ছবিতে ক্লিক করুন" data-ja="画像をクリックすると大きく表示されます">Click the image to see it larger</span>
+          </div>
+          <div class="info_text">
+          <span class="info_number">STOP 02</span>
+          <h4 data-en="Bicycle Rules" data-bn="সাইকেলের নিয়ম" data-ja="自転車のルール">Bicycle Rules</h4>
+          <p data-en="Ride on the left side of the road and use a light at night. Do not use a phone, hold an umbrella, or ride after drinking alcohol. Wearing a helmet is strongly recommended." data-bn="রাস্তার বাঁ পাশ দিয়ে সাইকেল চালান এবং রাতে আলো জ্বালান। চালানোর সময় ফোন ব্যবহার করবেন না, ছাতা ধরবেন না, আর মদ্যপানের পর কখনো চালাবেন না। হেলমেট পরা জোরালোভাবে পরামর্শ দেওয়া হয়।" data-ja="自転車は道路の左側を走り、夜はライトをつけます。スマートフォンの使用、傘さし運転、飲酒運転はやめましょう。ヘルメットの着用が強く勧められています。">Ride on the left side of the road and use a light at night. Do not use a phone, hold an umbrella, or ride after drinking alcohol. Wearing a helmet is strongly recommended.</p>
+          <p data-en="Park only in bicycle parking areas. Bicycles left in the wrong place can be taken away. Fines for breaking bicycle rules have become stricter." data-bn="শুধু সাইকেল পার্কিং এলাকায় রাখুন। ভুল জায়গায় রাখা সাইকেল সরিয়ে নেওয়া হতে পারে। সাইকেলের নিয়ম ভাঙলে জরিমানা আগের চেয়ে কঠোর হয়েছে।" data-ja="駐輪は決められた駐輪場にだけしてください。違う場所に止めた自転車は撤去されることがあります。自転車の交通違反への罰則も厳しくなっています。">Park only in bicycle parking areas. Bicycles left in the wrong place can be taken away. Fines for breaking bicycle rules have become stricter.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Register your bicycle (bouhan touroku) at the shop where you buy it. This helps if it is stolen." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; যে দোকান থেকে সাইকেল কিনবেন, সেখানেই সেটি নিবন্ধন (বোহান তোরোকু) করুন। চুরি হলে এটি কাজে লাগে।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;自転車は、購入したお店で防犯登録をしましょう。盗まれたときに役立ちます。"><strong>Tip:</strong> Register your bicycle (bouhan touroku) at the shop where you buy it. This helps if it is stolen.</p>
+          </div>
+        </article>
+
+
+        <article class="info reveal" id="walking">
+          <div class="info_image illust">
+            <a href="images/web/road-crossing.jpg" target="_blank" rel="noopener"><img src="images/web/road-crossing.jpg" alt="Poster showing children how to cross at a crosswalk safely in five steps" width="1152" height="928" loading="lazy" decoding="async"></a>
+            <span class="zoom_note" data-en="Click the image to see it larger" data-bn="বড় করে দেখতে ছবিতে ক্লিক করুন" data-ja="画像をクリックすると大きく表示されます">Click the image to see it larger</span>
+          </div>
+          <div class="info_text">
+          <span class="info_number">STOP 03</span>
+          <h4 data-en="Walking and Crossing Roads Safely" data-bn="নিরাপদে হাঁটা ও রাস্তা পার হওয়া" data-ja="安全な歩き方と道路の渡り方">Walking and Crossing Roads Safely</h4>
+          <p data-en="Wait for the green pedestrian signal, even if there are no cars. Follow the flow of people, and do not look at your phone while walking." data-bn="রাস্তায় গাড়ি না থাকলেও পথচারীদের সবুজ সংকেতের জন্য অপেক্ষা করুন। মানুষের স্রোতের সঙ্গে হাঁটুন, আর হাঁটার সময় ফোনের দিকে তাকিয়ে থাকবেন না।" data-ja="車が来ていなくても、歩行者用の青信号を待ちます。人の流れに合わせて歩き、歩きスマホはやめましょう。">Wait for the green pedestrian signal, even if there are no cars. Follow the flow of people, and do not look at your phone while walking.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; Narrow streets often have no sidewalk. Watch for cars and bicycles." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; সরু রাস্তায় প্রায়ই ফুটপাথ থাকে না। গাড়ি ও সাইকেল থেকে সতর্ক থাকুন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;細い道には歩道がないことが多いです。車や自転車に気をつけましょう。"><strong>Tip:</strong> Narrow streets often have no sidewalk. Watch for cars and bicycles.</p>
+          </div>
+        </article>
+
+
+        <article class="info reverse reveal" id="escalators">
+          <div class="info_image illust">
+            <img src="images/web/escalator.jpg" alt="Illustration of escalators: people stand on the left in Tokyo and on the right in Osaka" width="1200" height="822" loading="lazy" decoding="async">
+          </div>
+          <div class="info_text">
+          <span class="info_number">STOP 04</span>
+          <h4 data-en="Escalator Etiquette" data-bn="এস্কেলেটরের শিষ্টাচার" data-ja="エスカレーターのマナー">Escalator Etiquette</h4>
+          <p data-en="In Tokyo, many people stand on the left. In Osaka, many stand on the right. For safety, railway companies ask everyone to stand still and hold the handrail, so follow the signs." data-bn="টোকিওতে অনেকে বাঁ দিকে দাঁড়ায়। ওসাকায় অনেকে ডান দিকে দাঁড়ায়। নিরাপত্তার জন্য রেল কোম্পানিগুলো সবাইকে স্থির দাঁড়িয়ে হাতল ধরতে বলে, তাই সাইন অনুসরণ করুন।" data-ja="東京では左側に立つ人が多く、大阪では右側に立つ人が多いです。安全のため、鉄道会社は「立ち止まって手すりにつかまる」ことをお願いしているので、案内に従いましょう。">In Tokyo, many people stand on the left. In Osaka, many stand on the right. For safety, railway companies ask everyone to stand still and hold the handrail, so follow the signs.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; With a large suitcase, use the elevator." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; বড় সুটকেস থাকলে লিফট ব্যবহার করুন।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;大きなスーツケースがあるときは、エレベーターを使いましょう。"><strong>Tip:</strong> With a large suitcase, use the elevator.</p>
+          </div>
+        </article>
+
+
+        <article class="info reveal" id="driving">
+          <div class="info_image">
+            <div class="art_panel " aria-hidden="true"><span class="art_circle"></span><span class="art_kanji" lang="ja">車</span><span class="art_reading">KURUMA · くるま</span></div>
+          </div>
+          <div class="info_text">
+          <span class="info_number">STOP 05</span>
+          <h4 data-en="Basic Information About Driving" data-bn="গাড়ি চালানো সম্পর্কে মৌলিক তথ্য" data-ja="運転の基本情報">Basic Information About Driving</h4>
+          <p data-en="In Japan, cars drive on the &lt;strong&gt;left&lt;/strong&gt;. Everyone must wear a seat belt. Driving after drinking any alcohol is illegal and the punishment is severe." data-bn="জাপানে গাড়ি চলে রাস্তার &lt;strong&gt;বাঁ&lt;/strong&gt; দিক দিয়ে। সবাইকে সিটবেল্ট পরতে হয়। সামান্য মদ্যপানের পরও গাড়ি চালানো বেআইনি এবং শাস্তি কঠোর।" data-ja="日本では車は&lt;strong&gt;左側通行&lt;/strong&gt;です。全員がシートベルトを着用します。少しでもお酒を飲んだあとの運転は禁止で、罰則も重いです。">In Japan, cars drive on the <strong>left</strong>. Everyone must wear a seat belt. Driving after drinking any alcohol is illegal and the punishment is severe.</p>
+          <p data-en="Visitors need a license that Japan accepts, such as an International Driving Permit. Rules depend on your country, so check official information before you travel." data-bn="পর্যটকদের জাপানে গ্রহণযোগ্য লাইসেন্স লাগে, যেমন আন্তর্জাতিক ড্রাইভিং পারমিট। নিয়ম দেশভেদে আলাদা, তাই ভ্রমণের আগে সরকারি তথ্য দেখে নিন।" data-ja="旅行者は、国際運転免許証など日本で認められた免許が必要です。ルールは国によって違うので、渡航前に公式の情報を確認してください。">Visitors need a license that Japan accepts, such as an International Driving Permit. Rules depend on your country, so check official information before you travel.</p>
+          <p class="tip" data-en="&lt;strong&gt;Tip:&lt;/strong&gt; In big cities, trains are often faster and cheaper than driving." data-bn="&lt;strong&gt;টিপ:&lt;/strong&gt; বড় শহরে ট্রেন প্রায়ই গাড়ির চেয়ে দ্রুত ও সস্তা।" data-ja="&lt;strong&gt;ヒント：&lt;/strong&gt;大都市では、電車のほうが車より速くて安いことがよくあります。"><strong>Tip:</strong> In big cities, trains are often faster and cheaper than driving.</p>
+          </div>
+        </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_white" id="checklist">
+      <div class="inner">
+        <div class="section_head center reveal">
+          <p class="eyebrow" data-en="BEFORE YOU GO OUT" data-bn="বের হওয়ার আগে" data-ja="出かける前に">BEFORE YOU GO OUT</p>
+          <h3 class="section_title" data-en="Are you ready?" data-bn="আপনি কি প্রস্তুত?" data-ja="準備はできた？">Are you ready?</h3>
+          <p class="lead" data-en="Tick each item. Your answers are saved on this device." data-bn="প্রতিটি বিষয়ে টিক দিন। আপনার উত্তর এই ডিভাইসে সেভ থাকবে।" data-ja="チェックを入れてみましょう。この端末に保存されます。">Tick each item. Your answers are saved on this device.</p>
+        </div>
+        <div class="ready_box reveal">
+          <ul class="ready_list">
+            <li>
+              <label for="ready_ic">
+                <input type="checkbox" id="ready_ic">
+                <span class="check_box_ui" aria-hidden="true"></span>
+                <span class="check_text" data-en="Get an IC card (Suica or PASMO) and charge it" data-bn="একটি আইসি কার্ড (সুইকা বা পাসমো) নিয়ে টাকা রিচার্জ করুন" data-ja="ICカード（SuicaやPASMO）を用意してチャージする">Get an IC card (Suica or PASMO) and charge it</span>
+              </label>
+            </li>
+            <li>
+              <label for="ready_route">
+                <input type="checkbox" id="ready_route">
+                <span class="check_box_ui" aria-hidden="true"></span>
+                <span class="check_text" data-en="Use a map or train app to check routes" data-bn="রুট দেখতে ম্যাপ বা ট্রেনের অ্যাপ ব্যবহার করুন" data-ja="地図アプリや乗換アプリで道順を確認する">Use a map or train app to check routes</span>
+              </label>
+            </li>
+            <li>
+              <label for="ready_last">
+                <input type="checkbox" id="ready_last">
+                <span class="check_box_ui" aria-hidden="true"></span>
+                <span class="check_text" data-en="Check the time of the last train" data-bn="শেষ ট্রেনের সময় দেখে নিন" data-ja="終電の時間を確認する">Check the time of the last train</span>
+              </label>
+            </li>
+            <li>
+              <label for="ready_left">
+                <input type="checkbox" id="ready_left">
+                <span class="check_box_ui" aria-hidden="true"></span>
+                <span class="check_text" data-en="Keep left when walking, riding, and driving" data-bn="হাঁটা, সাইকেল ও গাড়ি চালানোর সময় বাঁ দিক ধরে চলুন" data-ja="歩くとき、自転車、車は左側を意識する">Keep left when walking, riding, and driving</span>
+              </label>
+            </li>
+            <li>
+              <label for="ready_drink">
+                <input type="checkbox" id="ready_drink">
+                <span class="check_box_ui" aria-hidden="true"></span>
+                <span class="check_text" data-en="Never ride or drive after drinking alcohol" data-bn="মদ্যপানের পর কখনো সাইকেল বা গাড়ি চালাবেন না" data-ja="お酒を飲んだら、自転車も車も絶対に運転しない">Never ride or drive after drinking alcohol</span>
+              </label>
+            </li>
+          </ul>
+          <div class="ready_meter">
+            <span data-en="Ready:" data-bn="প্রস্তুত:" data-ja="準備OK：">Ready:</span>
+            <span class="meter_bar" aria-hidden="true"><span></span></span>
+            <span id="ready_count" aria-live="polite">0 / 5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer (same on every page) ===== -->
+  <footer>
+    <span class="kanji_mark right" aria-hidden="true" lang="ja">楽</span>
+    <div class="inner">
+      <p class="footer_big" aria-hidden="true">ENJOY <span>JAPAN</span></p>
+      <div class="footer_inner">
+        <div class="footer_about">
+          <h4 data-en="ABOUT THIS SITE" data-bn="এই সাইট সম্পর্কে" data-ja="このサイトについて">ABOUT THIS SITE</h4>
+          <p data-en="Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese." data-bn="জাপানের দৈনন্দিন জীবনযাপনের জন্য আপনার সহজ গাইড। জাপানে বসবাসরত বা ভ্রমণকারী বিদেশিদের জন্য একটি শিক্ষার্থী প্রকল্প, ইংরেজি, বাংলা ও জাপানি ভাষায়।" data-ja="日本の日常生活に役立つガイド。日本に住む、または日本を訪れる外国人のための学生作品です。英語・ベンガル語・日本語で読めます。">Your guide to everyday life in Japan. A student project for foreigners living in or visiting Japan, in English, Bangla, and Japanese.</p>
+        </div>
+        <nav aria-label="Footer menu">
+          <h5 data-en="PAGES" data-bn="পেজসমূহ" data-ja="ページ">PAGES</h5>
+          <ul>
+              <li><a href="index.html" data-en="HOME" data-bn="হোম" data-ja="ホーム">HOME</a></li>
+              <li><a href="daily.html" data-en="DAILY LIFE" data-bn="দৈনন্দিন জীবন" data-ja="日常生活">DAILY LIFE</a></li>
+              <li><a href="everyday.html" data-en="EVERYDAY JAPAN" data-bn="প্রতিদিনের জাপান" data-ja="身近な日本">EVERYDAY JAPAN</a></li>
+              <li><a href="traffic.html" data-en="TRAFFIC" data-bn="যাতায়াত" data-ja="交通">TRAFFIC</a></li>
+              <li><a href="culture.html" data-en="CULTURE &amp; JAPANESE" data-bn="সংস্কৃতি ও জাপানি ভাষা" data-ja="文化と日本語">CULTURE &amp; JAPANESE</a></li>
+          </ul>
+        </nav>
+        <div class="footer_sos">
+          <h5 data-en="EMERGENCY" data-bn="জরুরি নম্বর" data-ja="緊急電話">EMERGENCY</h5>
+          <p><strong>110</strong> <span data-en="Police" data-bn="পুলিশ" data-ja="警察">Police</span></p>
+          <p><strong>119</strong> <span data-en="Fire / Ambulance" data-bn="অগ্নিকাণ্ড / অ্যাম্বুলেন্স" data-ja="火事・救急">Fire / Ambulance</span></p>
+          <p class="small" data-en="Free from any phone." data-bn="যেকোনো ফোন থেকে বিনামূল্যে।" data-ja="どの電話からも無料です。">Free from any phone.</p>
+        </div>
+      </div>
+      <p class="copyright" data-en="&amp;copy; 2026 ENJOY JAPAN. All rights reserved." data-bn="&amp;copy; ২০২৬ ENJOY JAPAN। সর্বস্বত্ব সংরক্ষিত।" data-ja="&amp;copy; 2026 ENJOY JAPAN. All rights reserved.">&copy; 2026 ENJOY JAPAN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button type="button" id="to_top" aria-label="Back to top" data-aria-en="Back to top" data-aria-bn="উপরে ফিরে যান" data-aria-ja="ページの先頭へ"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+</body>
+</html>
